@@ -1,0 +1,117 @@
+{
+  "$description": "Cinder Design System — Syntax tokens (dark). One palette, every editor. fontStyle values are advisory: platforms that cannot render italics fall back to color alone, which is why no distinction relies on style exclusively except parameter/variable (an accepted, conventional degradation).",
+  "syntax": {
+    "keyword":         { "$value": "{color.ember.300}", "$description": "Coral. Control flow and language words: if/for/return/import" },
+    "storage":         { "$value": "{color.ember.300}", "$description": "class/function/let/const declarations share the keyword voice" },
+    "storageModifier": { "$value": "{color.ember.300}", "fontStyle": "italic", "$description": "static/public/readonly/async — same voice, softened posture" },
+    "operator":        { "$value": "{color.ash.300}",  "$description": "Sandstone. Present but silent: = + ?? =>" },
+    "punctuation":     { "$value": "{color.ash.400}",  "$description": "Smoke. Braces, commas, semicolons recede furthest" },
+    "delimiter":       { "$value": "{color.ash.400}" },
+
+    "type":            { "$value": "{color.slate.300}", "$description": "Steel. All type positions: annotations, generics, primitives" },
+    "class":           { "$value": "{color.slate.300}" },
+    "interface":       { "$value": "{color.slate.300}", "fontStyle": "italic", "$description": "Contracts are types you can't instantiate — same color, italic" },
+    "enum":            { "$value": "{color.slate.300}" },
+    "enumMember":      { "$value": "{color.heather.300}", "$description": "Enum members are constants, so they take the literal color" },
+    "namespace":       { "$value": "{color.slate.400}", "$description": "Gunmetal — structural context, quieter than the types it contains" },
+    "module":          { "$value": "{color.slate.400}" },
+
+    "function":        { "$value": "{color.gold.300}", "$description": "Antique Gold. Calls and declarations — the brightest syntax color, because functions are where the eye scans" },
+    "method":          { "$value": "{color.gold.300}" },
+    "constructor":     { "$value": "{color.gold.300}" },
+    "decorator":       { "$value": "{color.gold.400}", "fontStyle": "italic", "$description": "Brass — metadata about code, one step dimmer than code" },
+    "annotation":      { "$value": "{color.gold.400}", "fontStyle": "italic" },
+
+    "variable":        { "$value": "{color.ash.100}", "$description": "Parchment. Variables are prose — they get the body-text color" },
+    "parameter":       { "$value": "{color.ash.100}", "fontStyle": "italic" },
+    "property":        { "$value": "{color.ash.100}", "$description": "Member access stays calm; dotted chains must not become rainbows" },
+    "constant":        { "$value": "{color.heather.300}", "$description": "Heather. All literal/immutable values share one family" },
+
+    "string":          { "$value": "{color.verdigris.300}", "$description": "Patina. The cool counterweight — strings are the largest colored mass in most files" },
+    "stringEscape":    { "$value": "{color.ember.200}", "$description": "Glow — a warm spark inside the cool string, unmissable" },
+    "regex":           { "$value": "{color.verdigris.400}", "$description": "Copper Oxide — string-family but visibly denser, matching regex density" },
+    "number":          { "$value": "{color.heather.300}" },
+    "boolean":         { "$value": "{color.heather.300}" },
+
+    "comment":         { "$value": "{color.ash.400}", "fontStyle": "italic", "$description": "Smoke @ 4.7:1 — readable when read, invisible when skimmed" },
+    "commentDoc":      { "$value": "{color.ash.400}", "$description": "Doc comments upright: they are API surface, not asides" },
+    "commentTodo":     { "$value": "{color.gold.400}", "fontStyle": "bold", "$description": "Brass bold — TODO/FIXME/HACK must survive a skim" },
+
+    "invalid":         { "$value": "{color.garnet.300}" },
+    "deprecated":      { "$value": "{color.ash.400}", "fontStyle": "strikethrough" }
+  },
+  "language": {
+    "markdown": {
+      "heading":    { "$value": "{color.gold.300}", "fontStyle": "bold" },
+      "bold":       { "$value": "{color.ash.100}", "fontStyle": "bold" },
+      "italic":     { "$value": "{color.ash.100}", "fontStyle": "italic" },
+      "link":       { "$value": "{color.slate.300}", "fontStyle": "underline" },
+      "linkUrl":    { "$value": "{color.slate.400}" },
+      "inlineCode": { "$value": "{color.ember.200}" },
+      "codeBlock":  { "$value": "{color.ash.200}" },
+      "blockquote": { "$value": "{color.ash.400}", "fontStyle": "italic" },
+      "listMarker": { "$value": "{color.ember.400}" },
+      "separator":  { "$value": "{color.ash.600}" }
+    },
+    "html": {
+      "tag":            { "$value": "{color.ember.300}" },
+      "tagPunctuation": { "$value": "{color.ash.400}" },
+      "attribute":      { "$value": "{color.gold.400}", "fontStyle": "italic" },
+      "attributeValue": { "$value": "{color.verdigris.300}" },
+      "entity":         { "$value": "{color.ember.200}" }
+    },
+    "css": {
+      "selector":      { "$value": "{color.gold.300}" },
+      "selectorClass": { "$value": "{color.gold.300}" },
+      "selectorId":    { "$value": "{color.ember.300}" },
+      "pseudo":        { "$value": "{color.ember.300}", "fontStyle": "italic" },
+      "property":      { "$value": "{color.slate.300}" },
+      "value":         { "$value": "{color.ash.100}" },
+      "unit":          { "$value": "{color.heather.300}" },
+      "atRule":        { "$value": "{color.ember.300}" },
+      "important":     { "$value": "{color.garnet.300}", "fontStyle": "bold" }
+    },
+    "json": {
+      "key":     { "$value": "{color.slate.300}" },
+      "string":  { "$value": "{color.verdigris.300}" },
+      "number":  { "$value": "{color.heather.300}" },
+      "keyword": { "$value": "{color.heather.300}", "$description": "true/false/null" }
+    },
+    "yaml": {
+      "key":    { "$value": "{color.slate.300}" },
+      "anchor": { "$value": "{color.heather.300}" },
+      "tag":    { "$value": "{color.ember.300}" },
+      "string": { "$value": "{color.verdigris.300}" }
+    },
+    "sql": {
+      "keyword":  { "$value": "{color.ember.300}" },
+      "function": { "$value": "{color.gold.300}" },
+      "table":    { "$value": "{color.ash.100}" },
+      "string":   { "$value": "{color.verdigris.300}" },
+      "number":   { "$value": "{color.heather.300}" }
+    },
+    "shell": {
+      "builtin":       { "$value": "{color.ember.300}" },
+      "command":       { "$value": "{color.gold.300}" },
+      "flag":          { "$value": "{color.ash.300}" },
+      "variable":      { "$value": "{color.ember.200}" },
+      "interpolation": { "$value": "{color.ember.200}" },
+      "string":        { "$value": "{color.verdigris.300}" },
+      "heredoc":       { "$value": "{color.verdigris.300}" }
+    },
+    "diff": {
+      "added":    { "$value": "{color.verdigris.300}" },
+      "deleted":  { "$value": "{color.garnet.300}" },
+      "header":   { "$value": "{color.slate.300}", "fontStyle": "bold" },
+      "range":    { "$value": "{color.heather.300}" },
+      "addedBg":  { "$value": "#3D7E6826" },
+      "deletedBg":{ "$value": "#B33A3026" }
+    },
+    "regexDetail": {
+      "characterClass": { "$value": "{color.heather.300}" },
+      "quantifier":     { "$value": "{color.ember.300}" },
+      "group":          { "$value": "{color.gold.400}" },
+      "anchor":         { "$value": "{color.ember.200}" }
+    }
+  }
+}

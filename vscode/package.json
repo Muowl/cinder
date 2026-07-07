@@ -1,0 +1,51 @@
+{
+  "name": "cinder",
+  "displayName": "Cinder",
+  "description": "A warm, cinematic dark theme — burning embers, antique gold, oxidized copper. Built on the Cinder design language.",
+  "version": "0.1.2",
+  "publisher": "muowl",
+  "license": "MIT",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color theme",
+    "dark",
+    "dark theme",
+    "warm",
+    "ember",
+    "gold",
+    "cinder"
+  ],
+  "galleryBanner": {
+    "color": "#141211",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Muowl/cinder.git",
+    "directory": "vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/Muowl/cinder/issues"
+  },
+  "homepage": "https://muowl.dev/",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cinder",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cinder-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "npx --yes @vscode/vsce package",
+    "publish": "npx --yes @vscode/vsce publish"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "$description": "Cinder Design System — Foundation color scales. Platform-agnostic. All semantic tokens alias into these scales; never reference foundation colors directly from an implementation.",
+  "color": {
+    "ash": {
+      "$description": "Warm near-neutral grayscale (hue ~45deg, chroma <= 0.012 OKLCH). Carries every background, surface, border and text tone. The warmth is felt, never seen.",
+      "50":  { "$value": "#F6F2EC", "$type": "color" },
+      "100": { "$value": "#EAE4DB", "$type": "color", "$description": "Parchment — primary text" },
+      "200": { "$value": "#CFC8BD", "$type": "color", "$description": "Sand" },
+      "300": { "$value": "#ABA399", "$type": "color", "$description": "Sandstone — secondary text" },
+      "400": { "$value": "#8B8378", "$type": "color", "$description": "Smoke — muted text, comments" },
+      "500": { "$value": "#6B6459", "$type": "color", "$description": "Dust — disabled" },
+      "600": { "$value": "#524C44", "$type": "color", "$description": "Iron — strong borders" },
+      "700": { "$value": "#3A352F", "$type": "color", "$description": "Bark — default borders" },
+      "800": { "$value": "#2B2723", "$type": "color", "$description": "Basalt — subtle borders, overlay surfaces" },
+      "900": { "$value": "#221F1C", "$type": "color", "$description": "Coal — elevated surfaces" },
+      "950": { "$value": "#1A1817", "$type": "color", "$description": "Char — default background" },
+      "975": { "$value": "#141211", "$type": "color", "$description": "Soot — recessed background (sidebars, wells)" }
+    },
+    "ember": {
+      "$description": "Orange-red signature family, derived from #DF3602. Hue preserved (~35deg OKLCH), saturation tamed at usable steps. The identity accent of Cinder.",
+      "50":  { "$value": "#FCEEE8", "$type": "color" },
+      "100": { "$value": "#F9DBCE", "$type": "color" },
+      "200": { "$value": "#F3B69C", "$type": "color", "$description": "Glow — string escapes, warm highlights" },
+      "300": { "$value": "#EC8F68", "$type": "color", "$description": "Coral — keywords" },
+      "400": { "$value": "#E26A38", "$type": "color", "$description": "Ember — primary accent, cursor" },
+      "500": { "$value": "#D34A17", "$type": "color", "$description": "Flame — closest to source #DF3602, use for fills/alpha only" },
+      "600": { "$value": "#AC3A10", "$type": "color" },
+      "700": { "$value": "#852C0C", "$type": "color" },
+      "800": { "$value": "#5F1F08", "$type": "color" },
+      "900": { "$value": "#3D1405", "$type": "color" }
+    },
+    "garnet": {
+      "$description": "Deep red family, derived from #BE0E10 and #8A130D. Desaturated toward garnet/oxblood so red never screams. Reserved for destructive/error semantics.",
+      "50":  { "$value": "#FBEDEB", "$type": "color" },
+      "100": { "$value": "#F7D7D3", "$type": "color" },
+      "200": { "$value": "#EFACA5", "$type": "color" },
+      "300": { "$value": "#E58177", "$type": "color", "$description": "Garnet — error text" },
+      "400": { "$value": "#D25A4E", "$type": "color", "$description": "Rust — deletions, error accents" },
+      "500": { "$value": "#B33A30", "$type": "color", "$description": "Oxblood — closest to source #BE0E10, fills/alpha only" },
+      "600": { "$value": "#94271F", "$type": "color" },
+      "700": { "$value": "#731D16", "$type": "color", "$description": "Maroon — echoes source #8A130D" },
+      "800": { "$value": "#521410", "$type": "color" },
+      "900": { "$value": "#350C09", "$type": "color" }
+    },
+    "gold": {
+      "$description": "Antique gold family, derived from #D5A418. Aged brass rather than yellow. Carries functions, warnings, and modification states.",
+      "50":  { "$value": "#FBF4DC", "$type": "color" },
+      "100": { "$value": "#F5E7B8", "$type": "color" },
+      "200": { "$value": "#EBD285", "$type": "color", "$description": "Straw" },
+      "300": { "$value": "#DFBC59", "$type": "color", "$description": "Antique Gold — functions" },
+      "400": { "$value": "#CBA32D", "$type": "color", "$description": "Brass — closest to source #D5A418; decorators, modified state" },
+      "500": { "$value": "#AA8618", "$type": "color" },
+      "600": { "$value": "#8A6C12", "$type": "color" },
+      "700": { "$value": "#6B530E", "$type": "color" },
+      "800": { "$value": "#4C3B09", "$type": "color" },
+      "900": { "$value": "#302505", "$type": "color" }
+    },
+    "verdigris": {
+      "$description": "Oxidized-copper teal-green (hue ~165deg, low chroma). The cool counterweight that keeps warm code readable. Strings, success, additions.",
+      "50":  { "$value": "#EBF4F0", "$type": "color" },
+      "100": { "$value": "#D5E7DF", "$type": "color" },
+      "200": { "$value": "#A9CFC0", "$type": "color" },
+      "300": { "$value": "#7DB5A0", "$type": "color", "$description": "Patina — strings, success" },
+      "400": { "$value": "#579A82", "$type": "color", "$description": "Copper Oxide — regex, additions" },
+      "500": { "$value": "#3D7E68", "$type": "color" },
+      "600": { "$value": "#2F6653", "$type": "color" },
+      "700": { "$value": "#255042", "$type": "color" },
+      "800": { "$value": "#1B3A30", "$type": "color" },
+      "900": { "$value": "#12261F", "$type": "color" }
+    },
+    "slate": {
+      "$description": "Dusty steel blue (hue ~220deg, low chroma). Structure and information: types, links, info. Deliberately grayed so it reads as iron, not sky.",
+      "50":  { "$value": "#EFF2F6", "$type": "color" },
+      "100": { "$value": "#DDE4EC", "$type": "color" },
+      "200": { "$value": "#B9C7D8", "$type": "color" },
+      "300": { "$value": "#92A9C2", "$type": "color", "$description": "Steel — types, info" },
+      "400": { "$value": "#6E8CAB", "$type": "color", "$description": "Gunmetal — namespaces" },
+      "500": { "$value": "#55738F", "$type": "color" },
+      "600": { "$value": "#435C74", "$type": "color" },
+      "700": { "$value": "#334759", "$type": "color" },
+      "800": { "$value": "#243340", "$type": "color" },
+      "900": { "$value": "#172129", "$type": "color" }
+    },
+    "heather": {
+      "$description": "Smoky mauve (hue ~325deg, low chroma). Literal values: numbers, booleans, constants. Muted enough to sit inside a warm room.",
+      "50":  { "$value": "#F6F0F5", "$type": "color" },
+      "100": { "$value": "#EBDFE9", "$type": "color" },
+      "200": { "$value": "#D6BDD2", "$type": "color" },
+      "300": { "$value": "#BE97B8", "$type": "color", "$description": "Heather — constants, numbers" },
+      "400": { "$value": "#A2729A", "$type": "color", "$description": "Plum Ash" },
+      "500": { "$value": "#875A80", "$type": "color" },
+      "600": { "$value": "#6D4867", "$type": "color" },
+      "700": { "$value": "#543850", "$type": "color" },
+      "800": { "$value": "#3C283A", "$type": "color" },
+      "900": { "$value": "#271A25", "$type": "color" }
+    }
+  }
+}
