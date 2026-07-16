@@ -38,8 +38,9 @@
     "currentLine":     { "$value": "{color.ash.900}", "$description": "One step above background; felt, not seen" },
     "selection":       { "$value": "#D34A1733", "$description": "ember.500 @ 20% — warm glass over code; all syntax colors stay legible through it" },
     "selectionInactive": { "$value": "#D34A171F", "$description": "ember.500 @ 12%" },
-    "searchHighlight": { "$value": "#AA861845", "$description": "gold.500 @ 27%" },
-    "searchHighlightActive": { "$value": "#CBA32D59", "$description": "gold.400 @ 35% — current match burns brighter" },
+    "searchHighlight": { "$value": "#AA861833", "$description": "gold.500 @ 20% — matched text stays >= 4.5:1 for every reading tone" },
+    "searchHighlightActive": { "$value": "#CBA32D33", "$description": "gold.400 @ 20% — pair with searchHighlightActiveBorder; the border, not a heavier fill, marks the current match" },
+    "searchHighlightActiveBorder": { "$value": "{color.gold.300}", "$description": "Antique Gold ring around the current match — 'burns brighter' without burying the text" },
     "bracketMatch":    { "$value": "#CBA32D26", "$description": "gold.400 @ 15% fill; pair with a {color.ash.600} box border, never a color flash" },
     "indentGuides":    { "$value": "{color.ash.800}" },
     "indentGuideActive": { "$value": "{color.ash.600}" },
@@ -48,7 +49,10 @@
     "scrollbarHover":  { "$value": "#524C44B3", "$description": "ash.600 @ 70%" },
     "lineNumber":      { "$value": "{color.ash.500}" },
     "lineNumberActive": { "$value": "{color.ash.300}" },
-    "whitespace":      { "$value": "{color.ash.700}" }
+    "whitespace":      { "$value": "{color.ash.700}" },
+    "ghostText":       { "$value": "{color.ash.400}", "$description": "Inline suggestions are meant to be read before accepting — AA, not Dust" },
+    "inlayHint":       { "$value": "{color.ash.400}", "$description": "Inlay hints carry real type/parameter info; Smoke, on an ash.800 @ 50% chip" },
+    "codeLens":        { "$value": "{color.ash.400}", "$description": "Reference counts and lens actions are actionable text" }
   },
   "git": {
     "added":    { "$value": "{color.verdigris.400}", "$description": "Copper Oxide — quiet in the gutter, clear in diffs" },
@@ -69,7 +73,7 @@
     "magenta":       { "$value": "{color.heather.400}" },
     "cyan":          { "$value": "{color.verdigris.300}" },
     "white":         { "$value": "{color.ash.200}" },
-    "brightBlack":   { "$value": "{color.ash.500}" },
+    "brightBlack":   { "$value": "{color.ash.400}", "$description": "Smoke — shells use brightBlack for autosuggestions and de-emphasized-but-real text; it must clear AA on Soot" },
     "brightRed":     { "$value": "{color.garnet.300}" },
     "brightGreen":   { "$value": "{color.verdigris.200}" },
     "brightYellow":  { "$value": "{color.gold.300}" },

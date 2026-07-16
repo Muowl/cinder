@@ -1,6 +1,6 @@
 # Cinder — Design Language Specification
 
-**Version 0.1 · Dark · July 2026**
+**Version 0.2 · Dark · July 2026**
 
 Cinder is a warm, cinematic design language for developer tools: burning embers seen
 across a dark room, antique gold under lamp light, oxidized copper, old leather.
@@ -42,7 +42,7 @@ which is why all six land in a tight 6.5–9.7:1 contrast window: code reads as 
 fabric, not as bright and dim patches.
 
 ### Ash — the warm neutral (why it exists)
-Every background, border, and text tone. Hue ~45°, chroma ≤ 0.012 — roughly the color
+Every background, border, and text tone. Hue 48–79° (OKLCH), chroma ≤ 0.02 — roughly the color
 of paper aged by candlelight, desaturated until only an instrument can tell. A truly
 neutral gray next to ember and gold would read *blue* by simultaneous contrast; Ash's
 faint warmth cancels that so the neutrals feel like part of the room.
@@ -137,11 +137,13 @@ material world of the theme. All ≥ 6.5:1.
 ### Editor
 - **Cursor = Ember.** The most saturated pixel on screen, always. Nothing else may
   compete with it — that's what makes it findable at a glance.
-- **Selection = Flame @ 20%** — warm glass. At 20% alpha over Char every syntax color
-  above 4.5:1 stays above 4.0:1, so selected code remains readable (the classic
-  failure of colored selections).
-- **Search = gold alphas** (27% others / 35% current): search is "panning for gold";
-  the current match burns brighter rather than changing hue.
+- **Selection = Flame @ 20%** — warm glass. At 20% alpha over Char every reading tone
+  (6.5:1+) stays above 5.3:1 and comments dip only to 3.9:1, so selected code remains
+  readable (the classic failure of colored selections).
+- **Search = gold alphas** (gold.500 @ 20% other matches / gold.400 @ 20% + an
+  Antique Gold border on the current match): search is "panning for gold"; the
+  current match is marked by a ring, not a heavier fill — a fill strong enough to
+  single it out would push the matched text itself below 4:1.
 - **Bracket match**: gold fill @ 15% + Iron border. No color flash — brackets are
   chrome, not content.
 - Current line Coal, indent guides Basalt (active: Iron), rulers Basalt,
@@ -156,7 +158,10 @@ reading text, so they sit one step dimmer than diff *text* (which uses the 300s)
 ### Terminal (ANSI 16)
 Normal colors are the 400s, brights the 300s/200s — CLI output gets the same voice
 as the editor: red errors are Rust, green success is Copper Oxide, yellow warnings
-are Brass. Mapping in `cinder.semantic.json → terminal`.
+are Brass. One deliberate exception: **brightBlack is Smoke (ash.400), not Dust** —
+shells use brightBlack for autosuggestions (zsh, fish) and de-emphasized-but-real
+text, so it must clear AA on the terminal background. Mapping in
+`cinder.semantic.json → terminal`.
 
 ---
 
@@ -209,17 +214,23 @@ All ratios WCAG 2.x, measured against Char `#1A1817` (script: computed, not esti
 | Info | Steel | 7.31 | 4.5+ |
 | Disabled | Dust | 3.03 | decorative only |
 
-Color-vision deficiencies: the system never pairs meaning across red/green alone —
-added/deleted differ in lightness and position (gutter shape, +/- prefix) as well as
-hue; error vs success are 6+ lightness-distinct steps apart; Ember vs Garnet are
-additionally separated by ~30° of hue and one full lightness step.
+Color-vision deficiencies (simulated with Machado et al. matrices at full severity,
+distances in OKLab): the system never pairs meaning across red/green alone —
+added/deleted differ in lightness and position (gutter shape, +/- prefix, line
+fills) as well as hue, and stay distinguishable under protanopia (Δ 0.12) and
+deuteranopia (Δ 0.08, plus the non-color cues). Known limits, accepted because no
+meaning rides on them alone: Coral vs Garnet are near neighbours (Δ 0.05 — errors
+always also carry a squiggle, gutter icon, or panel position), and Heather vs Steel
+converge under deuteranopia (constants vs types — a stylistic, not semantic,
+distinction).
 
 ---
 
 ## 6. Implementation contract
 
 1. Map platform keys → **semantic tokens** only (`background.default`, `syntax.keyword`, …).
-2. Never introduce a hex that is not in the foundation scales.
+2. Never introduce a hex that is not in the foundation scales. Sole exception:
+   pure black (`#000000`) may appear for drop shadows, always with alpha.
 3. Alpha effects are always `foundation color × documented opacity`, never new colors.
 4. If a platform lacks a concept (e.g. terminals have no "overlay"), collapse *upward*
    to the nearest darker layer, never invent an intermediate.
