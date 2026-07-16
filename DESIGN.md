@@ -150,6 +150,28 @@ material world of the theme. All ≥ 6.5:1.
   scrollbars Bark @ 50%. All structural furniture is Ash: visible on inspection,
   invisible in peripheral vision.
 
+### AI chat & inline-edit surfaces
+Chat panes (VS Code Chat/Copilot, Cursor, Antigravity and other forks) are ordinary
+rooms and follow the existing rules — no new colors, no special "AI" hue:
+
+- **Bubbles are surfaces.** Request bubble = elevated (Coal), hover = overlay
+  (Basalt); code blocks inside requests keep the editor's own background rules.
+- **The one accent still owns the screen.** Accepting a proposed edit is a primary
+  action: "tab-will-accept" borders and the primary next-edit-suggestion gutter
+  indicator are Ember. An applied/successful edit indicator is Copper Oxide (it
+  *became* an addition, git semantics). Secondary indicators are Ash chrome.
+- **Proposed diffs are diffs.** Inline-edit original/modified use the exact
+  diff alphas (garnet/verdigris 500s @ 10% line / 15% changed line / 25% word) —
+  an AI-proposed change may not look more exciting than a human one.
+- **Thinking/working shimmer is Gold** — same "activity" voice as search and
+  modified state, at 40%.
+- **Quota gauges**: the status-bar quota bar derives from chrome (Bark track,
+  Ember fill via `focusBorder`); the `gauge.*` keys pair each family's 800 step
+  with its 100 step (Bark/Glow neutral, gold, garnet) — readable whichever half
+  the platform paints as fill vs. label.
+- Mode pickers (ask/edit/agent radios) are ordinary interactive chrome: resting
+  Coal, hover Basalt, active Bark with an Iron ring.
+
 ### Git
 Added **Copper Oxide** · Modified **Brass** · Deleted **Rust** · Ignored **Dust** ·
 Conflict **Ember**. The 400-step versions: gutter marks are glanceable status, not

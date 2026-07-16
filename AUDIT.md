@@ -111,6 +111,35 @@ big leaks, all mapped to existing semantic tokens (~180 new keys):
   of defaults.
 - Markdown strikethrough, `entity.name.package` (Go/Java) → Gunmetal.
 
+### 2.6 AI chat surfaces (v0.2.1 addendum)
+
+Validated against the official theme-color reference (fetched from
+`microsoft/vscode-docs`, July 2026): of the 64 documented AI-surface keys
+(`chat.*`, `inlineChat*`, `inlineEdit.*`, `interactive.*`, `gauge.*`, `radio.*`,
+ghost text), the theme already covered all 15 `chat.*` keys, the complete
+`inlineChat*` set and `interactive.*`. Closed in v0.2.1:
+
+- **`inlineEdit.*` next-edit-suggestion set completed** (12 keys): changed-line and
+  changed-text overlays reuse the exact diff alphas; "tab-will-accept" borders are
+  Ember (accepting is a primary action); the *successful* gutter indicator is
+  Copper Oxide (an applied edit became an addition); indicator borders/backgrounds
+  in Ash chrome.
+- **`gauge.*`** (7 keys — chat quota meters): each state pairs a family's 800
+  step with its 100 step (≥ 8.7:1), chosen to stay correct whichever half the
+  widget paints as fill vs. label. The status-bar quota bar itself derives from
+  `editorWidget.border` + `focusBorder` (verified in `chatStatus.css` upstream),
+  which Cinder already renders as Bark track + Ember fill.
+- **`radio.*`** (7 keys — the chat ask/edit/agent mode picker): ordinary
+  interactive chrome (Coal → Basalt hover → Bark + Iron ring active).
+- `editorGhostText.background`/`.border` are left **deliberately unset** — a chip
+  behind ghost text is noise; the transparent default is correct.
+
+Cursor and Antigravity consume VS Code themes: their chat/composer panes are built
+from these same keys plus generic chrome (`sideBar`, `input`, `list`, `button`,
+`textLink`, `keybindingLabel`), all of which Cinder defines. Their fork-private
+surfaces are not themeable by extensions; the mapping rules for those live in
+DESIGN.md § "AI chat & inline-edit surfaces" so any port makes the same choices.
+
 ## 3. Known, accepted limitations
 
 1. **Heather ↔ Steel under deuteranopia** (Δ 0.017): constants and types converge.

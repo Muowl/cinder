@@ -16,7 +16,7 @@ all bound to the same semantic tokens.
 ```
 cd vscode
 npm run package
-code --install-extension cinder-0.2.0.vsix   # or: cursor --install-extension ...
+code --install-extension cinder-0.2.1.vsix   # or: cursor --install-extension ...
 ```
 
 Or for development: open `vscode/` in VS Code and press `F5` (Extension Development Host),

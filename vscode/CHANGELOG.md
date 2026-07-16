@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.1 — 2026-07-16
+
+AI-surface pass, validated against the official theme-color reference — full
+coverage of the 64 documented chat/AI keys (all `chat.*` and `inlineChat*` keys
+were already themed):
+
+- Complete `inlineEdit.*` next-edit-suggestion set: changed line/text overlays
+  reuse the diff alphas, "tab-will-accept" borders in Ember, successful indicator
+  in Copper Oxide
+- `gauge.*` (chat quota meters): Basalt track, Ember fill, Brass/Oxblood states
+- `radio.*` (chat ask/edit/agent mode picker) as ordinary interactive chrome
+- DESIGN.md gains an "AI chat & inline-edit surfaces" section so ports (Cursor,
+  Antigravity, JetBrains AI) map these surfaces by the same rules
+
 ## 0.2.0 — 2026-07-16
 
 Full computed color audit of the design language and theme (see `AUDIT.md` at the
