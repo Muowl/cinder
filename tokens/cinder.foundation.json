@@ -2,7 +2,7 @@
   "$description": "Cinder Design System — Foundation color scales. Platform-agnostic. All semantic tokens alias into these scales; never reference foundation colors directly from an implementation.",
   "color": {
     "ash": {
-      "$description": "Warm near-neutral grayscale (hue ~45deg, chroma <= 0.012 OKLCH). Carries every background, surface, border and text tone. The warmth is felt, never seen.",
+      "$description": "Warm near-neutral grayscale (hue 48-79deg, chroma <= 0.02 OKLCH). Carries every background, surface, border and text tone. The warmth is felt, never seen.",
       "50":  { "$value": "#F6F2EC", "$type": "color" },
       "100": { "$value": "#EAE4DB", "$type": "color", "$description": "Parchment — primary text" },
       "200": { "$value": "#CFC8BD", "$type": "color", "$description": "Sand" },

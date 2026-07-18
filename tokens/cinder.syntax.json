@@ -35,6 +35,7 @@
 
     "comment":         { "$value": "{color.ash.400}", "fontStyle": "italic", "$description": "Smoke @ 4.7:1 — readable when read, invisible when skimmed" },
     "commentDoc":      { "$value": "{color.ash.400}", "$description": "Doc comments upright: they are API surface, not asides" },
+    "commentDocTag":   { "$value": "{color.ash.300}", "$description": "@param/@returns tags — Sandstone, one step up from the doc body so the structure of a docblock scans" },
     "commentTodo":     { "$value": "{color.gold.400}", "fontStyle": "bold", "$description": "Brass bold — TODO/FIXME/HACK must survive a skim" },
 
     "invalid":         { "$value": "{color.garnet.300}" },
