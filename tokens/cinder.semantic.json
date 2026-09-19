@@ -1,85 +1,460 @@
 {
   "$description": "Cinder Design System — Semantic tokens (dark). Implementations (VS Code, JetBrains, terminals, Obsidian, web, desktop) map their platform keys to THESE tokens, never to foundation scales or raw hex. Alpha variants are expressed as 8-digit hex derived from the referenced foundation color.",
   "background": {
-    "default":  { "$value": "{color.ash.950}", "$description": "Char — editor / main canvas" },
-    "subtle":   { "$value": "{color.ash.975}", "$description": "Soot — recessed chrome: sidebars, panels, wells" },
-    "elevated": { "$value": "{color.ash.900}", "$description": "Coal — cards, popups, widgets one layer up" },
-    "overlay":  { "$value": "{color.ash.800}", "$description": "Basalt — topmost layers: menus, tooltips, command palette" }
+    "default": {
+      "$value": "{color.ash.950}",
+      "$description": "Char — editor / main canvas"
+    },
+    "subtle": {
+      "$value": "{color.ash.975}",
+      "$description": "Soot — recessed chrome: sidebars, panels, wells"
+    },
+    "elevated": {
+      "$value": "{color.ash.900}",
+      "$description": "Coal — cards, popups, widgets one layer up"
+    },
+    "overlay": {
+      "$value": "{color.ash.800}",
+      "$description": "Basalt — topmost layers: menus, tooltips, command palette"
+    }
   },
   "surface": {
-    "default":   { "$value": "{color.ash.900}", "$description": "Resting interactive surface" },
-    "secondary": { "$value": "{color.ash.800}", "$description": "Hover / secondary emphasis" },
-    "tertiary":  { "$value": "{color.ash.700}", "$description": "Active / pressed / selected chrome" }
+    "default": {
+      "$value": "{color.ash.900}",
+      "$description": "Resting interactive surface"
+    },
+    "secondary": {
+      "$value": "{color.ash.800}",
+      "$description": "Hover / secondary emphasis"
+    },
+    "tertiary": {
+      "$value": "{color.ash.700}",
+      "$description": "Active / pressed / selected chrome"
+    }
   },
   "border": {
-    "subtle":  { "$value": "{color.ash.800}", "$description": "Hairlines inside a surface; barely-there separation" },
-    "default": { "$value": "{color.ash.700}", "$description": "Standard component and pane borders" },
-    "strong":  { "$value": "{color.ash.600}", "$description": "Focused inputs, resize handles, emphasis" }
+    "subtle": {
+      "$value": "{color.ash.800}",
+      "$description": "Hairlines inside a surface; barely-there separation"
+    },
+    "default": {
+      "$value": "{color.ash.700}",
+      "$description": "Standard component and pane borders"
+    },
+    "strong": {
+      "$value": "{color.ash.600}",
+      "$description": "Focused inputs, resize handles, emphasis"
+    },
+    "control": {
+      "$value": "{color.ash.400}",
+      "$description": "Visible input boundaries; decorative separators remain quieter."
+    },
+    "focus": {
+      "$value": "{color.ember.400}",
+      "$description": "Keyboard focus indicator."
+    }
   },
   "text": {
-    "primary":   { "$value": "{color.ash.100}", "$description": "Parchment — body text and code, 14.0:1 on background.default" },
-    "secondary": { "$value": "{color.ash.300}", "$description": "Sandstone — supporting text, 7.1:1" },
-    "muted":     { "$value": "{color.ash.400}", "$description": "Smoke — de-emphasized text, 4.7:1 (AA)" },
-    "disabled":  { "$value": "{color.ash.500}", "$description": "Dust — 3.0:1, intentionally sub-AA; must never carry essential info" }
+    "primary": {
+      "$value": "{color.ash.100}",
+      "$description": "Parchment — body text and code, 14.0:1 on background.default"
+    },
+    "secondary": {
+      "$value": "{color.ash.300}",
+      "$description": "Sandstone — supporting text, 7.1:1"
+    },
+    "muted": {
+      "$value": "{color.ash.350}",
+      "$description": "Linen - readable supporting text on dark surfaces."
+    },
+    "disabled": {
+      "$value": "{color.ash.500}",
+      "$description": "Dust — 3.0:1, intentionally sub-AA; must never carry essential info"
+    },
+    "auxiliary": {
+      "$value": "{color.ash.350}",
+      "$description": "CodeLens, hints, line numbers and suggested text; never the disabled token."
+    }
   },
   "accent": {
-    "primary":   { "$value": "{color.ember.400}", "$description": "Ember — the brand color: focus, primary actions, active states" },
-    "secondary": { "$value": "{color.gold.400}",  "$description": "Brass — secondary emphasis, badges, counters" },
-    "tertiary":  { "$value": "{color.garnet.400}", "$description": "Rust — rare, deliberate warm emphasis" }
+    "primary": {
+      "$value": "{color.ember.400}",
+      "$description": "Ember — the brand color: focus, primary actions, active states"
+    },
+    "secondary": {
+      "$value": "{color.gold.400}",
+      "$description": "Brass — secondary emphasis, badges, counters"
+    },
+    "tertiary": {
+      "$value": "{color.garnet.400}",
+      "$description": "Rust — rare, deliberate warm emphasis"
+    }
   },
   "status": {
-    "error":   { "$value": "{color.garnet.300}",    "$description": "Garnet, 6.5:1" },
-    "warning": { "$value": "{color.gold.300}",      "$description": "Antique Gold, 9.7:1" },
-    "success": { "$value": "{color.verdigris.300}", "$description": "Patina, 7.6:1" },
-    "info":    { "$value": "{color.slate.300}",     "$description": "Steel, 7.3:1" }
+    "error": {
+      "$value": "{color.garnet.300}",
+      "$description": "Garnet, 6.5:1"
+    },
+    "warning": {
+      "$value": "{color.gold.300}",
+      "$description": "Antique Gold, 9.7:1"
+    },
+    "success": {
+      "$value": "{color.verdigris.300}",
+      "$description": "Patina, 7.6:1"
+    },
+    "info": {
+      "$value": "{color.slate.300}",
+      "$description": "Steel, 7.3:1"
+    },
+    "errorOnSurface": {
+      "$value": "{color.garnet.200}",
+      "$description": "Error labels on selected or elevated surfaces."
+    }
   },
   "editor": {
-    "cursor":          { "$value": "{color.ember.400}", "$description": "The single most saturated element on screen — by design the eye's anchor" },
-    "currentLine":     { "$value": "{color.ash.900}", "$description": "One step above background; felt, not seen" },
-    "selection":       { "$value": "#D34A1733", "$description": "ember.500 @ 20% — warm glass over code; all syntax colors stay legible through it" },
-    "selectionInactive": { "$value": "#D34A171F", "$description": "ember.500 @ 12%" },
-    "searchHighlight": { "$value": "#AA861833", "$description": "gold.500 @ 20% — matched text stays >= 4.5:1 for every reading tone" },
-    "searchHighlightActive": { "$value": "#CBA32D33", "$description": "gold.400 @ 20% — pair with searchHighlightActiveBorder; the border, not a heavier fill, marks the current match" },
-    "searchHighlightActiveBorder": { "$value": "{color.gold.300}", "$description": "Antique Gold ring around the current match — 'burns brighter' without burying the text" },
-    "bracketMatch":    { "$value": "#CBA32D26", "$description": "gold.400 @ 15% fill; pair with a {color.ash.600} box border, never a color flash" },
-    "indentGuides":    { "$value": "{color.ash.800}" },
-    "indentGuideActive": { "$value": "{color.ash.600}" },
-    "rulers":          { "$value": "{color.ash.800}" },
-    "scrollbar":       { "$value": "#3A352F80", "$description": "ash.700 @ 50%" },
-    "scrollbarHover":  { "$value": "#524C44B3", "$description": "ash.600 @ 70%" },
-    "lineNumber":      { "$value": "{color.ash.500}" },
-    "lineNumberActive": { "$value": "{color.ash.300}" },
-    "whitespace":      { "$value": "{color.ash.700}" },
-    "ghostText":       { "$value": "{color.ash.400}", "$description": "Inline suggestions are meant to be read before accepting — AA, not Dust" },
-    "inlayHint":       { "$value": "{color.ash.400}", "$description": "Inlay hints carry real type/parameter info; Smoke, on an ash.800 @ 50% chip" },
-    "codeLens":        { "$value": "{color.ash.400}", "$description": "Reference counts and lens actions are actionable text" }
+    "cursor": {
+      "$value": "{color.ember.400}",
+      "$description": "Ember - a consistent warm attention accent."
+    },
+    "currentLine": {
+      "$value": "{color.ash.900}",
+      "$description": "One step above background; felt, not seen"
+    },
+    "selection": {
+      "$value": "#D34A1733",
+      "$description": "ember.500 at 20%; reading tones validated over the composed background."
+    },
+    "selectionInactive": {
+      "$value": "#D34A171F",
+      "$description": "ember.500 @ 12%"
+    },
+    "searchHighlight": {
+      "$value": "#AA861845",
+      "$description": "gold.500 @ 27%"
+    },
+    "searchHighlightActive": {
+      "$value": "#CBA32D59",
+      "$description": "gold.400 @ 35% — current match burns brighter"
+    },
+    "bracketMatch": {
+      "$value": "#CBA32D26",
+      "$description": "gold.400 @ 15% fill; pair with a {color.ash.600} box border, never a color flash"
+    },
+    "indentGuides": {
+      "$value": "{color.ash.800}"
+    },
+    "indentGuideActive": {
+      "$value": "{color.ash.600}"
+    },
+    "rulers": {
+      "$value": "{color.ash.800}"
+    },
+    "scrollbar": {
+      "$value": "#3A352F80",
+      "$description": "ash.700 @ 50%"
+    },
+    "scrollbarHover": {
+      "$value": "#524C44B3",
+      "$description": "ash.600 @ 70%"
+    },
+    "lineNumber": {
+      "$value": "{color.ash.350}"
+    },
+    "lineNumberActive": {
+      "$value": "{color.ash.300}"
+    },
+    "whitespace": {
+      "$value": "{color.ash.700}"
+    },
+    "searchForeground": {
+      "$value": "{color.ash.100}"
+    },
+    "codeLens": {
+      "$value": "{text.auxiliary}"
+    },
+    "inlayHint": {
+      "$value": "{text.auxiliary}"
+    },
+    "ghostText": {
+      "$value": "{text.auxiliary}"
+    }
   },
   "git": {
-    "added":    { "$value": "{color.verdigris.400}", "$description": "Copper Oxide — quiet in the gutter, clear in diffs" },
-    "modified": { "$value": "{color.gold.400}",      "$description": "Brass" },
-    "deleted":  { "$value": "{color.garnet.400}",    "$description": "Rust" },
-    "ignored":  { "$value": "{color.ash.500}",       "$description": "Dust" },
-    "conflict": { "$value": "{color.ember.400}",     "$description": "Ember — conflicts demand the brand's full attention" },
-    "diffAddedBg":   { "$value": "#3D7E6826", "$description": "verdigris.500 @ 15%" },
-    "diffDeletedBg": { "$value": "#B33A3026", "$description": "garnet.500 @ 15%" }
+    "added": {
+      "$value": "{color.verdigris.400}",
+      "$description": "Copper Oxide — quiet in the gutter, clear in diffs"
+    },
+    "modified": {
+      "$value": "{color.gold.400}",
+      "$description": "Brass"
+    },
+    "deleted": {
+      "$value": "{color.garnet.400}",
+      "$description": "Rust"
+    },
+    "ignored": {
+      "$value": "{color.ash.500}",
+      "$description": "Dust"
+    },
+    "conflict": {
+      "$value": "{color.ember.400}",
+      "$description": "Ember — conflicts demand the brand's full attention"
+    },
+    "diffAddedBg": {
+      "$value": "#3D7E6826",
+      "$description": "verdigris.500 @ 15%"
+    },
+    "diffDeletedBg": {
+      "$value": "#B33A3026",
+      "$description": "garnet.500 @ 15%"
+    },
+    "addedText": {
+      "$value": "{color.verdigris.300}"
+    },
+    "deletedText": {
+      "$value": "{color.garnet.200}"
+    },
+    "ignoredText": {
+      "$value": "{color.ash.350}"
+    },
+    "conflictText": {
+      "$value": "{color.ember.300}",
+      "$description": "Readable conflict labels on selected rows."
+    }
   },
   "terminal": {
     "$description": "ANSI 16 mapping for terminal emulators and integrated terminals.",
-    "black":         { "$value": "{color.ash.800}" },
-    "red":           { "$value": "{color.garnet.400}" },
-    "green":         { "$value": "{color.verdigris.400}" },
-    "yellow":        { "$value": "{color.gold.400}" },
-    "blue":          { "$value": "{color.slate.400}" },
-    "magenta":       { "$value": "{color.heather.400}" },
-    "cyan":          { "$value": "{color.verdigris.300}" },
-    "white":         { "$value": "{color.ash.200}" },
-    "brightBlack":   { "$value": "{color.ash.400}", "$description": "Smoke — shells use brightBlack for autosuggestions and de-emphasized-but-real text; it must clear AA on Soot" },
-    "brightRed":     { "$value": "{color.garnet.300}" },
-    "brightGreen":   { "$value": "{color.verdigris.200}" },
-    "brightYellow":  { "$value": "{color.gold.300}" },
-    "brightBlue":    { "$value": "{color.slate.300}" },
-    "brightMagenta": { "$value": "{color.heather.300}" },
-    "brightCyan":    { "$value": "{color.verdigris.100}" },
-    "brightWhite":   { "$value": "{color.ash.100}" }
+    "black": {
+      "$value": "{color.ash.800}"
+    },
+    "red": {
+      "$value": "{color.garnet.400}"
+    },
+    "green": {
+      "$value": "{color.verdigris.400}"
+    },
+    "yellow": {
+      "$value": "{color.gold.400}"
+    },
+    "blue": {
+      "$value": "{color.slate.400}"
+    },
+    "magenta": {
+      "$value": "{color.heather.400}"
+    },
+    "cyan": {
+      "$value": "{color.verdigris.terminalCyan}"
+    },
+    "white": {
+      "$value": "{color.ash.200}"
+    },
+    "brightBlack": {
+      "$value": "{color.ash.350}"
+    },
+    "brightRed": {
+      "$value": "{color.garnet.300}"
+    },
+    "brightGreen": {
+      "$value": "{color.verdigris.200}"
+    },
+    "brightYellow": {
+      "$value": "{color.gold.300}"
+    },
+    "brightBlue": {
+      "$value": "{color.slate.300}"
+    },
+    "brightMagenta": {
+      "$value": "{color.heather.300}"
+    },
+    "brightCyan": {
+      "$value": "{color.verdigris.terminalBrightCyan}"
+    },
+    "brightWhite": {
+      "$value": "{color.ash.100}"
+    }
+  },
+  "control": {
+    "primaryBackground": {
+      "$value": "{color.ember.700}"
+    },
+    "primaryHover": {
+      "$value": "{color.ember.600}"
+    },
+    "primaryForeground": {
+      "$value": "{color.garnet.50}"
+    },
+    "checkboxBorder": {
+      "$value": "{color.ash.350}"
+    }
+  },
+  "agent": {
+    "surface": {
+      "$value": "{color.ash.900}"
+    },
+    "requestSurface": {
+      "$value": "{color.ash.800}"
+    },
+    "requestHover": {
+      "$value": "{color.ash.700}"
+    },
+    "foreground": {
+      "$value": "{color.ash.100}"
+    },
+    "secondaryForeground": {
+      "$value": "{color.ash.350}"
+    },
+    "working": {
+      "$value": "{color.gold.300}"
+    },
+    "pendingEdit": {
+      "$value": "{color.gold.400}"
+    },
+    "added": {
+      "$value": "{color.verdigris.300}"
+    },
+    "removed": {
+      "$value": "{color.garnet.200}"
+    },
+    "focus": {
+      "$value": "{color.ember.400}"
+    },
+    "statusSurface": {
+      "$value": "{color.ash.800}"
+    },
+    "badgeBorder": {
+      "$value": "{color.ash.350}"
+    },
+    "reviewCanvas": {
+      "$value": "{color.ash.950}"
+    },
+    "addedLine": {
+      "$value": "#3D7E6815"
+    },
+    "removedLine": {
+      "$value": "#B33A3015"
+    },
+    "addedText": {
+      "$value": "#3D7E6826"
+    },
+    "removedText": {
+      "$value": "#B33A3026"
+    }
+  },
+  "decoration": {
+    "workbenchSelection": {
+      "$value": "#D34A174D"
+    },
+    "shadow": {
+      "$value": "#00000066"
+    },
+    "matchText": {
+      "$value": "{color.ember.300}"
+    },
+    "transparent": {
+      "$value": "#00000000"
+    },
+    "selectionOccurrence": {
+      "$value": "#D34A171A"
+    },
+    "strongWordHighlight": {
+      "$value": "#524C4480"
+    },
+    "subtleSurface": {
+      "$value": "#2B272380"
+    },
+    "hoverHighlight": {
+      "$value": "#3A352F66"
+    },
+    "fullOpacity": {
+      "$value": "#000000FF"
+    },
+    "searchMarker": {
+      "$value": "#CBA32D66"
+    },
+    "selectionMarker": {
+      "$value": "#D34A1766"
+    },
+    "errorMarker": {
+      "$value": "#E5817766"
+    },
+    "warningMarker": {
+      "$value": "#DFBC5966"
+    },
+    "scrollbarActive": {
+      "$value": "#524C44E6"
+    },
+    "peekMatch": {
+      "$value": "#AA86181A"
+    },
+    "debugBackground": {
+      "$value": "{color.ember.800}"
+    },
+    "debugForeground": {
+      "$value": "{color.ember.100}"
+    },
+    "warmText": {
+      "$value": "{color.ember.200}"
+    },
+    "errorBackground": {
+      "$value": "{color.garnet.800}"
+    },
+    "errorText": {
+      "$value": "{color.garnet.100}"
+    },
+    "warningBackground": {
+      "$value": "{color.gold.800}"
+    },
+    "warningText": {
+      "$value": "{color.gold.100}"
+    },
+    "errorInput": {
+      "$value": "{color.garnet.900}"
+    },
+    "errorBorder": {
+      "$value": "{color.garnet.500}"
+    },
+    "warningInput": {
+      "$value": "{color.gold.900}"
+    },
+    "warningBorder": {
+      "$value": "{color.gold.500}"
+    },
+    "infoInput": {
+      "$value": "{color.slate.900}"
+    },
+    "infoBorder": {
+      "$value": "{color.slate.500}"
+    },
+    "infoText": {
+      "$value": "{color.slate.100}"
+    },
+    "activeLink": {
+      "$value": "{color.slate.200}"
+    },
+    "mergeCurrentHeader": {
+      "$value": "#3D7E6859"
+    },
+    "mergeIncomingHeader": {
+      "$value": "#55738F59"
+    },
+    "mergeIncomingContent": {
+      "$value": "#55738F26"
+    },
+    "mergeCommonHeader": {
+      "$value": "#524C4459"
+    },
+    "mergeCommonContent": {
+      "$value": "#524C4426"
+    },
+    "rowFocus": {
+      "$value": "#221F1C80"
+    },
+    "rowHover": {
+      "$value": "#221F1C40"
+    },
+    "transparentSearchBorder": {
+      "$value": "#CBA32D00"
+    }
   }
 }

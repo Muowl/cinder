@@ -1,38 +1,26 @@
 # Changelog
 
+## 0.3.0 — 2026-09-18
+
+- Improve reading contrast for comments, punctuation, hints, search and hover states.
+- Add agent-session colors and next-edit review/acceptance indicators.
+- Separate ANSI cyan from green; preserve dark warm surfaces and Ember focus.
+- Align regex anchors and grammar-provided TODO scopes with syntax tokens.
+- Generate the theme from shared tokens and validate contrast automatically.
+- Document host compatibility and remove unsupported accessibility claims.
+
 ## 0.2.1 — 2026-07-16
 
-AI-surface pass, validated against the official theme-color reference — full
-coverage of the 64 documented chat/AI keys (all `chat.*` and `inlineChat*` keys
-were already themed):
-
-- Complete `inlineEdit.*` next-edit-suggestion set: changed line/text overlays
-  reuse the diff alphas, "tab-will-accept" borders in Ember, successful indicator
-  in Copper Oxide
-- `gauge.*` (chat quota meters): Basalt track, Ember fill, Brass/Oxblood states
-- `radio.*` (chat ask/edit/agent mode picker) as ordinary interactive chrome
-- DESIGN.md gains an "AI chat & inline-edit surfaces" section so ports (Cursor,
-  Antigravity, JetBrains AI) map these surfaces by the same rules
+- Complete the documented `inlineEdit.*`, `gauge.*` and `radio.*` color sets.
+- Add next-edit acceptance borders, quota states and agent mode controls.
+- Document AI chat and inline-edit mappings for future platform ports.
 
 ## 0.2.0 — 2026-07-16
 
-Full computed color audit of the design language and theme (see `AUDIT.md` at the
-repo root). Highlights:
-
-- **Readability fixes**: find-match now marks the current hit with an Antique Gold
-  border over a lighter fill (matched text stays ≥ 4.5:1; was as low as 2.35:1);
-  ghost text, inlay hints and CodeLens raised from Dust (3.0:1) to Smoke (4.7:1);
-  `terminal.ansiBrightBlack` raised to Smoke so zsh/fish autosuggestions are
-  readable; button hover now darkens (Flame could never reach 4.5:1 with light text)
-- **Coverage**: ~180 new workbench keys so VS Code's blue defaults never leak
-  through — notebooks, symbol icons, testing, terminal find/command decorations,
-  debug icons, 3-way merge editor, bracket-pair guides, marker navigation,
-  unicode highlight, comment threads, fold/linked-editing/snippets, search editor,
-  keybinding table, ports, profiles, extension badges
-- **Syntax**: Python function calls now Antique Gold; `=>` reads as an operator;
-  `self`/`cls`/`this` take the keyword voice; JSDoc/JavaDoc tags in Sandstone;
-  TODO/FIXME codetags in Brass bold (finally implementing `syntax.commentTodo`);
-  Output-panel log levels in status hues; Markdown strikethrough
+- Audit text, control and interaction-state contrast across the theme.
+- Expand workbench coverage to prevent default blue colors from leaking through.
+- Improve find matches, ghost text, hints, terminal colors and button hover states.
+- Expand Python, documentation, task-comment, output and Markdown syntax coverage.
 
 ## 0.1.2 — 2026-07-07
 

@@ -1,2 +1,4 @@
 icons/
 *.vsix
+theme.template.json
+package-lock.json

@@ -2,7 +2,7 @@
   "name": "cinder",
   "displayName": "Cinder",
   "description": "A warm, cinematic dark theme — burning embers, antique gold, oxidized copper. Built on the Cinder design language.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "publisher": "muowl",
   "license": "MIT",
   "icon": "icon.png",
@@ -45,7 +45,11 @@
     ]
   },
   "scripts": {
-    "package": "npx --yes @vscode/vsce package",
-    "publish": "npx --yes @vscode/vsce publish"
+    "vscode:prepublish": "node ../scripts/build.mjs && node ../scripts/validate.mjs",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0"
   }
 }

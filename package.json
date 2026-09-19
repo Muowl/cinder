@@ -1,0 +1,12 @@
+{
+  "name": "cinder-design-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check && node scripts/validate.mjs",
+    "preview": "node scripts/preview.mjs",
+    "package": "npm run build && npm run check && npm --prefix vscode run package"
+  },
+  "engines": { "node": ">=22" }
+}

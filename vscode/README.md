@@ -1,19 +1,60 @@
 # Cinder
 
-A warm, cinematic dark theme — burning embers, antique gold, oxidized copper — tempered
-for long coding sessions.
+A warm dark theme with charcoal backgrounds, antique gold functions, coral
+keywords, copper-green strings and soft steel-blue types.
 
-Cinder is the first implementation of the **Cinder design language**: seven named color
-families (Ash, Ember, Garnet, Gold, Verdigris, Slate, Heather) bound through semantic
-tokens, with every reading color verified between 4.5:1 and 15:1 contrast.
+## Designed for reading
 
-## Highlights
+- Warm off-white variables and body text.
+- Readable comments, punctuation, hints and inline suggestions.
+- Explicit search text colors and visible keyboard focus.
+- Restrained Ember accents and tested primary-button hover contrast.
+- Coordinated ANSI colors with distinct green and blue-shifted cyan.
 
-- Near-black warm-neutral background (**Char** `#1A1817`) — never brown, never blue
-- One loud accent: the **Ember** cursor is always the most saturated pixel on screen
-- Variables stay uncolored (**Parchment**) — code reads as prose, not confetti
-- Functions in **Antique Gold**, keywords in **Coral**, strings in **Patina**, types in **Steel**
-- Comments at exactly 4.7:1 — readable when read, invisible when skimmed
-- Full theming for the chat/agent UI, inline chat, ghost text, multi-diff review and terminal (ANSI 16)
+## Chat and agents
 
-Works in VS Code and Cursor.
+Colors cover VS Code chat, inline chat, agent sessions, working status, edited
+files, next-edit suggestions, Tab-to-accept indicators, review markers and
+multi-file diffs. Requests use quiet neutral surfaces; focus stays Ember.
+
+## Screenshots
+
+Actual VS Code desktop captures using Cinder and sample code:
+
+![Cinder TypeScript editor](screenshots/editor.png)
+
+![Cinder native file diff](screenshots/diff.png)
+
+## Install
+
+Install the extension and choose **Cinder** in **Preferences: Color Theme**.
+For local packages, use **Extensions: Install from VSIX...**.
+
+VS Code is the primary target. Cursor's Editor Window inherits VS Code themes;
+its separate Agents Window and private UI may not honor these colors. Available
+agent styling depends on the host version and capabilities.
+
+## Contrast
+
+Automated checks cover syntax on defined editor, selection and review backgrounds,
+plus selected interface states. Comments reach 6.68:1 on the editor and 5.05:1 on
+a selection over the current line. This is not a claim that every extension,
+terminal program or overlay combination meets WCAG. Comfort also depends on font,
+display, environment and individual preference. TODO highlighting requires a
+language grammar that exposes task scopes.
+
+### Inline suggestion readability
+
+VS Code 1.138 applies 70% opacity to syntax-highlighted inline suggestions.
+This can make them dimmer than the theme's configured ghost-text color. To use
+the theme's readable single-color suggestion text, optionally set:
+
+```json
+"editor.inlineSuggest.syntaxHighlightingEnabled": false
+```
+
+The extension does not change this preference automatically. Visual review
+covered the native editor, selections, search, hover, terminal, diffs and the
+initial agent panel. Active AI conversations and tool approvals were not tested.
+
+[Source and design specification](https://github.com/Muowl/cinder)
