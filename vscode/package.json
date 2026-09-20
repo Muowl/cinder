@@ -1,8 +1,8 @@
 {
-  "name": "cinder",
+  "name": "cinder-warm-theme",
   "displayName": "Cinder",
   "description": "A warm, cinematic dark theme — burning embers, antique gold, oxidized copper. Built on the Cinder design language.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publisher": "muowl",
   "license": "MIT",
   "icon": "icon.png",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/Muowl/cinder/issues"
   },
-  "homepage": "https://muowl.dev/",
+  "homepage": "https://muowl.dev/themes/cinder/",
   "contributes": {
     "themes": [
       {

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-09-19
+
+- Fix screenshot URLs in the VS Code Marketplace and extension details view.
+- Link the extension metadata and screenshots to the dedicated Cinder showcase.
+
 ## 0.3.0 — 2026-09-18
 
 - Improve reading contrast for comments, punctuation, hints, search and hover states.

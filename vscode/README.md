@@ -3,6 +3,8 @@
 A warm dark theme with charcoal backgrounds, antique gold functions, coral
 keywords, copper-green strings and soft steel-blue types.
 
+[Explore the palette, syntax and contrast notes on the Cinder site](https://muowl.dev/themes/cinder/).
+
 ## Designed for reading
 
 - Warm off-white variables and body text.
@@ -21,9 +23,9 @@ multi-file diffs. Requests use quiet neutral surfaces; focus stays Ember.
 
 Actual VS Code desktop captures using Cinder and sample code:
 
-![Cinder TypeScript editor](screenshots/editor.png)
+[![Cinder TypeScript editor](https://raw.githubusercontent.com/Muowl/cinder/main/vscode/screenshots/editor.png)](https://muowl.dev/themes/cinder/)
 
-![Cinder native file diff](screenshots/diff.png)
+[![Cinder native file diff](https://raw.githubusercontent.com/Muowl/cinder/main/vscode/screenshots/diff.png)](https://muowl.dev/themes/cinder/)
 
 ## Install
 
@@ -57,4 +59,4 @@ The extension does not change this preference automatically. Visual review
 covered the native editor, selections, search, hover, terminal, diffs and the
 initial agent panel. Active AI conversations and tool approvals were not tested.
 
-[Source and design specification](https://github.com/Muowl/cinder)
+[Cinder showcase](https://muowl.dev/themes/cinder/) · [Source and design specification](https://github.com/Muowl/cinder)

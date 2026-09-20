@@ -28,7 +28,7 @@ It is not an editor screenshot or a substitute for installed-theme QA.
 ```sh
 npm --prefix vscode ci
 npm run package
-code --install-extension vscode/cinder-0.3.0.vsix
+code --install-extension vscode/cinder-warm-theme-0.3.1.vsix
 ```
 
 Choose **Cinder** under **Preferences: Color Theme**. Packaging does not publish
