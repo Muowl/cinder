@@ -448,7 +448,9 @@
       "name": "Doc comments — upright (API surface, not asides)",
       "scope": [
         "comment.block.documentation",
-        "comment.block.documentation punctuation"
+        "comment.block.documentation punctuation.definition.comment",
+        "comment.line.double-slash.documentation",
+        "comment.line.double-slash.documentation punctuation.definition.comment"
       ],
       "settings": {
         "foreground": "#A69E93",
@@ -540,6 +542,12 @@
         "entity.name.function.decorator",
         "meta.decorator entity.name.function",
         "meta.decorator punctuation.decorator",
+        "meta.function.decorator.python support.type.python",
+        "punctuation.definition.decorator.python",
+        "entity.name.function.macro.rust",
+        "entity.name.function.preprocessor",
+        "meta.attribute.rust",
+        "support.other.attribute.cpp entity.other.attribute",
         "storage.type.annotation",
         "punctuation.definition.annotation",
         "meta.annotation.identifier"
@@ -559,6 +567,11 @@
         "support.type",
         "entity.name.type.enum",
         "storage.type.primitive",
+        "storage.type.built-in.c",
+        "storage.type.built-in.cpp",
+        "storage.type.built-in.primitive.c",
+        "storage.type.built-in.primitive.cpp",
+        "storage.type.return-type.lambda.cpp",
         "keyword.type"
       ],
       "settings": {
@@ -607,6 +620,7 @@
       "name": "Parameters — Parchment italic",
       "scope": [
         "variable.parameter",
+        "entity.name.variable.parameter.cs",
         "meta.function.parameters variable"
       ],
       "settings": {
@@ -625,6 +639,7 @@
         "constant.language.undefined",
         "variable.other.constant",
         "variable.other.enummember",
+        "entity.name.variable.enum-member.cs",
         "support.constant",
         "keyword.other.unit"
       ],
@@ -651,6 +666,10 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         "punctuation.section.embedded",
+        "punctuation.definition.interpolation.begin.cs",
+        "punctuation.definition.interpolation.end.cs",
+        "constant.character.format.placeholder.other.python",
+        "storage.type.format.python",
         "constant.other.placeholder"
       ],
       "settings": {
@@ -1098,6 +1117,26 @@
         "foreground": "#CBA32D",
         "fontStyle": "bold"
       }
+    },
+    {
+      "name": "Python call targets — Antique Gold",
+      "scope": [
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "#DFBC59"
+      }
+    },
+    {
+      "name": "Rust lifetimes — Steel italic",
+      "scope": [
+        "entity.name.type.lifetime.rust",
+        "storage.modifier.lifetime.rust"
+      ],
+      "settings": {
+        "foreground": "#92A9C2",
+        "fontStyle": "italic"
+      }
     }
   ],
   "semanticTokenColors": {
@@ -1122,7 +1161,10 @@
       "foreground": "#CBA32D",
       "italic": true
     },
-    "macro": "#CBA32D",
+    "macro": {
+      "foreground": "#CBA32D",
+      "italic": true
+    },
     "variable": "#EAE4DB",
     "variable.readonly": "#BE97B8",
     "parameter": {
@@ -1144,6 +1186,27 @@
       "foreground": "#A69E93",
       "italic": true
     },
+    "comment.documentation": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "boolean:rust": "#BE97B8",
+    "selfTypeKeyword:rust": "#92A9C2",
+    "attribute:rust": {
+      "foreground": "#CBA32D",
+      "italic": true
+    },
+    "lifetime:rust": {
+      "foreground": "#92A9C2",
+      "italic": true
+    },
+    "constParameter:rust": "#BE97B8",
+    "const:rust": "#BE97B8",
+    "escapeSequence:rust": "#F3B69C",
+    "formatSpecifier:rust": "#F3B69C",
+    "invalidEscapeSequence:rust": "#E58177",
+    "punctuation:rust": "#A69E93",
+    "operator:rust": "#ABA399",
     "*.deprecated": {
       "strikethrough": true
     },

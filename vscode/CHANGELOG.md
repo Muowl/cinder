@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.2 — 2026-10-31
+
+- Align C/C++ built-in types and C++ lambda return types with the Steel type color.
+- Cover C# enum members, parameters and interpolation delimiters.
+- Align Python call targets, built-in decorators and f-string formatting colors.
+- Cover Rust and C/C++ macros, Rust/C++ attributes and Rust lifetimes.
+- Add rust-analyzer semantic roles, including boolean literals, format specifiers,
+  attributes and operator inheritance; keep documentation comments upright.
+- Add reproducible TextMate specimens, selector checks and visual comparisons
+  for Rust, C, C++, C#, Python, TypeScript/JavaScript and TSX/JSX.
+
 ## 0.3.1 — 2026-09-19
 
 - Fix screenshot URLs in the VS Code Marketplace and extension details view.

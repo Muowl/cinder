@@ -23,12 +23,31 @@ npm run preview
 Open `preview/index.html` for the illustrative palette and interaction specimen.
 It is not an editor screenshot or a substitute for installed-theme QA.
 
+### Language QA
+
+The additional language checks use pinned development dependencies:
+
+```sh
+npm ci
+npm run check:languages
+npm run qa:languages
+npx playwright install chromium
+npm run qa:capture
+```
+
+Open `qa/languages/index.html` for tokenized before/after specimens. The checks
+cover nine grammars (Rust, C, C++, C#, Python, TypeScript, JavaScript, TSX and JSX)
+and theme-side semantic selector matching. They do not run language servers.
+See [the language review](qa/LANGUAGE-REVIEW.md) for findings, captures and limits.
+`CINDER_CHROMIUM_PATH` can select an existing compatible Chromium binary for captures.
+The baseline comparison needs Git history containing commit `2241d18`.
+
 ## Package for VS Code
 
 ```sh
 npm --prefix vscode ci
 npm run package
-code --install-extension vscode/cinder-warm-theme-0.3.1.vsix
+code --install-extension vscode/cinder-warm-theme-0.3.2.vsix
 ```
 
 Choose **Cinder** under **Preferences: Color Theme**. Packaging does not publish

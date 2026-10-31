@@ -1,0 +1,654 @@
+[
+  {
+    "lang": "rust",
+    "line": "pub struct Queue",
+    "needle": "struct",
+    "role": "syntax.keyword"
+  },
+  {
+    "lang": "rust",
+    "line": "pub struct Queue",
+    "needle": "Queue",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "rust",
+    "line": "#[derive",
+    "needle": "derive",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "rust",
+    "line": "pub struct Queue",
+    "needle": "a",
+    "role": "syntax.type",
+    "italic": true
+  },
+  {
+    "lang": "rust",
+    "line": "const LIMIT:",
+    "needle": "usize",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "rust",
+    "line": "const LIMIT:",
+    "needle": "LIMIT",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "rust",
+    "line": "let enabled:",
+    "needle": "true",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "rust",
+    "line": "pub fn push",
+    "needle": "push",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "rust",
+    "line": "self.items.push(item)",
+    "needle": "items",
+    "role": "syntax.property"
+  },
+  {
+    "lang": "rust",
+    "line": "println!(",
+    "needle": "println!",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "rust",
+    "line": "Err(\"queue full\")",
+    "needle": "queue full",
+    "role": "syntax.string"
+  },
+  {
+    "lang": "rust",
+    "line": "// TODO: persist",
+    "needle": "TODO",
+    "role": "syntax.comment",
+    "italic": true
+  },
+  {
+    "lang": "rust",
+    "line": "println!(",
+    "needle": "\\n",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "c",
+    "line": "#include <stdbool.h>",
+    "needle": "include",
+    "role": "syntax.keyword"
+  },
+  {
+    "lang": "c",
+    "line": "#include <stdbool.h>",
+    "needle": "<stdbool.h>",
+    "role": "syntax.string"
+  },
+  {
+    "lang": "c",
+    "line": "#define LIMIT",
+    "needle": "LIMIT",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "c",
+    "line": "const char *name",
+    "needle": "char",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "c",
+    "line": "size_t count",
+    "needle": "size_t",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "c",
+    "line": "static inline bool push",
+    "needle": "bool",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "c",
+    "line": "static inline bool push",
+    "needle": "push",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "c",
+    "line": "static inline bool push",
+    "needle": "value",
+    "role": "syntax.parameter",
+    "italic": true
+  },
+  {
+    "lang": "c",
+    "line": "const bool enabled",
+    "needle": "true",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "c",
+    "line": "return false",
+    "needle": "false",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "c",
+    "line": "printf(",
+    "needle": "printf",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "c",
+    "line": "printf(",
+    "needle": "%s",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "c",
+    "line": "/** Fixed-size",
+    "needle": "/**",
+    "role": "syntax.commentDoc",
+    "italic": false
+  },
+  {
+    "lang": "c",
+    "line": "/** Fixed-size",
+    "needle": "*/",
+    "role": "syntax.commentDoc",
+    "italic": false
+  },
+  {
+    "lang": "cpp",
+    "line": "/// Generic",
+    "needle": "///",
+    "role": "syntax.commentDoc",
+    "italic": false
+  },
+  {
+    "lang": "cpp",
+    "line": "/// Generic",
+    "needle": "Generic queue",
+    "role": "syntax.commentDoc",
+    "italic": false
+  },
+  {
+    "lang": "cpp",
+    "line": "class Queue",
+    "needle": "Queue",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "cpp",
+    "line": "static constexpr",
+    "needle": "size_t",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "cpp",
+    "line": "[[nodiscard]]",
+    "needle": "nodiscard",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "cpp",
+    "line": "[[nodiscard]]",
+    "needle": "bool",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "cpp",
+    "line": "[[nodiscard]]",
+    "needle": "push",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "cpp",
+    "line": "[[nodiscard]]",
+    "needle": "value",
+    "role": "syntax.parameter",
+    "italic": true
+  },
+  {
+    "lang": "cpp",
+    "line": "cinder::Queue<int>",
+    "needle": "int",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "cpp",
+    "line": "return true",
+    "needle": "true",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "cpp",
+    "line": "CINDER_LOG(label)",
+    "needle": "CINDER_LOG",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "cpp",
+    "line": "const std::string_view",
+    "needle": "string_view",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "cpp",
+    "line": "const std::string_view",
+    "needle": "Cinder queue",
+    "role": "syntax.string"
+  },
+  {
+    "lang": "csharp",
+    "line": "namespace Cinder",
+    "needle": "Cinder",
+    "role": "syntax.namespace"
+  },
+  {
+    "lang": "csharp",
+    "line": "public sealed class",
+    "needle": "Queue",
+    "role": "syntax.class"
+  },
+  {
+    "lang": "csharp",
+    "line": "public const int",
+    "needle": "int",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "csharp",
+    "line": "public async Task<bool>",
+    "needle": "PushAsync",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "csharp",
+    "line": "public async Task<bool>",
+    "needle": "value",
+    "role": "syntax.parameter",
+    "italic": true
+  },
+  {
+    "lang": "csharp",
+    "line": "public enum Status",
+    "needle": "Ready",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "csharp",
+    "line": "public enum Status",
+    "needle": "Full",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "csharp",
+    "line": "/// <summary>",
+    "needle": "///",
+    "role": "syntax.commentDoc",
+    "italic": false
+  },
+  {
+    "lang": "csharp",
+    "line": "return value is not null",
+    "needle": "null",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "csharp",
+    "line": "Console.WriteLine",
+    "needle": "WriteLine",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "csharp",
+    "line": "Console.WriteLine",
+    "needle": "{",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "csharp",
+    "line": "Console.WriteLine",
+    "needle": "}",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "csharp",
+    "line": "Console.WriteLine",
+    "needle": "\\n",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "python",
+    "line": "@dataclass",
+    "needle": "dataclass",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "python",
+    "line": "@property",
+    "needle": "property",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "python",
+    "line": "@property",
+    "needle": "@",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "python",
+    "line": "class Queue",
+    "needle": "Queue",
+    "role": "syntax.class"
+  },
+  {
+    "lang": "python",
+    "line": "async def push",
+    "needle": "push",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "python",
+    "line": "async def push",
+    "needle": "value",
+    "role": "syntax.parameter",
+    "italic": true
+  },
+  {
+    "lang": "python",
+    "line": "enabled: bool",
+    "needle": "bool",
+    "role": "syntax.type"
+  },
+  {
+    "lang": "python",
+    "line": "enabled: bool",
+    "needle": "True",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "python",
+    "line": "return False",
+    "needle": "False",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "python",
+    "line": "items.append(value)",
+    "needle": "append",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "python",
+    "line": "T = TypeVar",
+    "needle": "TypeVar",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "python",
+    "line": "items: list[T]",
+    "needle": "field",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "python",
+    "line": "print(f",
+    "needle": "{",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "python",
+    "line": "print(f",
+    "needle": ":02d",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "python",
+    "line": "print(f",
+    "needle": "\\n",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "python",
+    "line": "# TODO: persist",
+    "needle": "TODO",
+    "role": "syntax.commentTodo"
+  },
+  {
+    "lang": "typescript",
+    "line": "export class Queue",
+    "needle": "Queue",
+    "role": "syntax.class"
+  },
+  {
+    "lang": "typescript",
+    "line": "async push",
+    "needle": "push",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "typescript",
+    "line": "async push",
+    "needle": "value",
+    "role": "syntax.parameter",
+    "italic": true
+  },
+  {
+    "lang": "typescript",
+    "line": "const LIMIT",
+    "needle": "LIMIT",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "typescript",
+    "line": "const enabled",
+    "needle": "true",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "typescript",
+    "line": "return null",
+    "needle": "null",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "typescript",
+    "line": "const name",
+    "needle": "trim",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "typescript",
+    "line": "console.log",
+    "needle": "log",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "typescript",
+    "line": "console.log",
+    "needle": "${",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "typescript",
+    "line": "const pattern",
+    "needle": "^",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "typescript",
+    "line": "const pattern",
+    "needle": "\\d",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "typescript",
+    "line": "entries.map",
+    "needle": "map",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "javascript",
+    "line": "export class Queue",
+    "needle": "Queue",
+    "role": "syntax.class"
+  },
+  {
+    "lang": "javascript",
+    "line": "async push",
+    "needle": "push",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "javascript",
+    "line": "async push",
+    "needle": "value",
+    "role": "syntax.parameter",
+    "italic": true
+  },
+  {
+    "lang": "javascript",
+    "line": "const LIMIT",
+    "needle": "LIMIT",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "javascript",
+    "line": "const enabled",
+    "needle": "true",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "javascript",
+    "line": "return null",
+    "needle": "null",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "javascript",
+    "line": "const name",
+    "needle": "trim",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "javascript",
+    "line": "console.log",
+    "needle": "log",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "javascript",
+    "line": "console.log",
+    "needle": "${",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "javascript",
+    "line": "const pattern",
+    "needle": "^",
+    "role": "syntax.stringEscape"
+  },
+  {
+    "lang": "javascript",
+    "line": "const pattern",
+    "needle": "\\d",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "javascript",
+    "line": "entries.map",
+    "needle": "map",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "tsx",
+    "line": "export function QueueCard",
+    "needle": "QueueCard",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "tsx",
+    "line": "<section className",
+    "needle": "section",
+    "role": "syntax.keyword"
+  },
+  {
+    "lang": "tsx",
+    "line": "<section className",
+    "needle": "className",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "tsx",
+    "line": "<section className",
+    "needle": "queue",
+    "role": "syntax.string"
+  },
+  {
+    "lang": "tsx",
+    "line": "{enabled ? <button",
+    "needle": "null",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "tsx",
+    "line": "const enabled",
+    "needle": "32",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "jsx",
+    "line": "export function QueueCard",
+    "needle": "QueueCard",
+    "role": "syntax.function"
+  },
+  {
+    "lang": "jsx",
+    "line": "<section className",
+    "needle": "section",
+    "role": "syntax.keyword"
+  },
+  {
+    "lang": "jsx",
+    "line": "<section className",
+    "needle": "className",
+    "role": "syntax.decorator",
+    "italic": true
+  },
+  {
+    "lang": "jsx",
+    "line": "<section className",
+    "needle": "queue",
+    "role": "syntax.string"
+  },
+  {
+    "lang": "jsx",
+    "line": "{enabled ? <button",
+    "needle": "null",
+    "role": "syntax.constant"
+  },
+  {
+    "lang": "jsx",
+    "line": "const enabled",
+    "needle": "32",
+    "role": "syntax.constant"
+  }
+]
