@@ -12,6 +12,7 @@ pub trait Summary {
 }
 
 impl<'a, T: Debug> Queue<'a, T> {
+    /// Creates an empty queue with a borrowed label.
     pub fn new(label: &'a str) -> Self {
         Self { label, items: Vec::new() }
     }

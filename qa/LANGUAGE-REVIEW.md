@@ -20,7 +20,7 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
 
 | Linguagem | Achado e comportamento após o ajuste | Comparação visual |
 |---|---|---|
-| Rust | `derive` ganha Brass; macros seguem o papel de metadados; lifetimes usam Steel em itálico. Seletores próprios do rust-analyzer cobrem booleanos, atributos, `Self`, constantes, escapes, formatação e pontuação. Operadores preservam Sandstone apesar da herança de pontuação do provedor. | [Antes/depois](languages/screenshots/rust-15px.png) |
+| Rust | `derive` ganha Brass; macros seguem o papel de metadados; lifetimes usam Steel em itálico. Seletores próprios do rust-analyzer cobrem booleanos, atributos, `Self`, constantes, escapes, formatação e pontuação. Operadores preservam Sandstone apesar da herança de pontuação do provedor. Comentários `///` ficam sem itálico também sem o rust-analyzer. | [Antes/depois](languages/screenshots/rust-15px.png) |
 | C | `char`, `bool`, `int`, `void` e `size_t` deixam Coral e passam a Steel. Definições de macros usam Brass. Delimitadores de comentários de documentação ficam sem itálico. | [Antes/depois](languages/screenshots/c-15px.png) |
 | C++ | Tipos básicos e retornos de lambdas passam a Steel; `[[nodiscard]]` recebe Brass. Definições de macros seguem o papel de metadados. Documentação `///` fica sem itálico quando a gramática a distingue. | [Antes/depois](languages/screenshots/cpp-15px.png) |
 | C# | Membros de enum recebem Heather; parâmetros recebem o mesmo itálico das outras linguagens; chaves de interpolação recebem Glow. O marcador `///` acompanha o estilo sem itálico da documentação. | [Antes/depois](languages/screenshots/csharp-15px.png) |
@@ -31,7 +31,7 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
 
 ## Método e evidências
 
-- **105 verificações TextMate**, usando Shiki 4.5.0 com Oniguruma e nove gramáticas
+- **106 verificações TextMate**, usando Shiki 4.5.0 com Oniguruma e nove gramáticas
   fixadas no lockfile. Cada verificação identifica um trecho do arquivo de exemplo
   e confere a cor efetivamente produzida e, quando pertinente, o itálico.
 - **74 verificações de seletores semânticos**, com tipos comuns às sete linguagens
@@ -49,7 +49,7 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
 - **Pacote VSIX 0.3.2** gerado com o hook de build/validação.
 
 Os testes passam após as correções. Na mesma matriz, a versão base falhava em
-28 alvos TextMate e 22 alvos semânticos. São alvos de teste afetados, não uma
+29 alvos TextMate e 22 alvos semânticos. São alvos de teste afetados, não uma
 contagem de defeitos independentes.
 
 [Resultados com cores, estilos e escopos](languages/results.json) ·

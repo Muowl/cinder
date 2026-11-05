@@ -13,6 +13,13 @@
   },
   {
     "lang": "rust",
+    "line": "/// Creates an empty queue",
+    "needle": "/// Creates an empty queue",
+    "role": "syntax.commentDoc",
+    "italic": false
+  },
+  {
+    "lang": "rust",
     "line": "#[derive",
     "needle": "derive",
     "role": "syntax.decorator",

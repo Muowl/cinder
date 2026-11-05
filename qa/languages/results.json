@@ -65,6 +65,39 @@
     },
     {
       "lang": "rust",
+      "line": 15,
+      "needle": "/// Creates an empty queue",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.rust > comment.line.documentation.rust > punctuation.definition.comment.rust",
+          "source.rust > comment.line.documentation.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > comment.line.documentation.rust > punctuation.definition.comment.rust",
+          "source.rust > comment.line.documentation.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
       "line": 4,
       "needle": "derive",
       "role": "syntax.decorator",
@@ -127,7 +160,7 @@
     },
     {
       "lang": "rust",
-      "line": 21,
+      "line": 22,
       "needle": "usize",
       "role": "syntax.type",
       "before": {
@@ -157,7 +190,7 @@
     },
     {
       "lang": "rust",
-      "line": 21,
+      "line": 22,
       "needle": "LIMIT",
       "role": "syntax.constant",
       "before": {
@@ -187,7 +220,7 @@
     },
     {
       "lang": "rust",
-      "line": 22,
+      "line": 23,
       "needle": "true",
       "role": "syntax.constant",
       "before": {
@@ -217,7 +250,7 @@
     },
     {
       "lang": "rust",
-      "line": 19,
+      "line": 20,
       "needle": "push",
       "role": "syntax.function",
       "before": {
@@ -247,7 +280,7 @@
     },
     {
       "lang": "rust",
-      "line": 24,
+      "line": 25,
       "needle": "items",
       "role": "syntax.property",
       "before": {
@@ -277,7 +310,7 @@
     },
     {
       "lang": "rust",
-      "line": 25,
+      "line": 26,
       "needle": "println!",
       "role": "syntax.decorator",
       "italic": true,
@@ -308,7 +341,7 @@
     },
     {
       "lang": "rust",
-      "line": 28,
+      "line": 29,
       "needle": "queue full",
       "role": "syntax.string",
       "before": {
@@ -340,7 +373,7 @@
     },
     {
       "lang": "rust",
-      "line": 20,
+      "line": 21,
       "needle": "TODO",
       "role": "syntax.comment",
       "italic": true,
@@ -373,7 +406,7 @@
     },
     {
       "lang": "rust",
-      "line": 25,
+      "line": 26,
       "needle": "\\n",
       "role": "syntax.stringEscape",
       "before": {

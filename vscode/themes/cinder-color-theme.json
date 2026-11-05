@@ -450,7 +450,9 @@
         "comment.block.documentation",
         "comment.block.documentation punctuation.definition.comment",
         "comment.line.double-slash.documentation",
-        "comment.line.double-slash.documentation punctuation.definition.comment"
+        "comment.line.double-slash.documentation punctuation.definition.comment",
+        "comment.line.documentation",
+        "comment.line.documentation punctuation.definition.comment"
       ],
       "settings": {
         "foreground": "#A69E93",

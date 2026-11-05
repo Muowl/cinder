@@ -7,7 +7,8 @@
 - Align Python call targets, built-in decorators and f-string formatting colors.
 - Cover Rust and C/C++ macros, Rust/C++ attributes and Rust lifetimes.
 - Add rust-analyzer semantic roles, including boolean literals, format specifiers,
-  attributes and operator inheritance; keep documentation comments upright.
+  attributes and operator inheritance; keep documentation comments upright,
+  including Rust `///` comments without rust-analyzer.
 - Add reproducible TextMate specimens, selector checks and visual comparisons
   for Rust, C, C++, C#, Python, TypeScript/JavaScript and TSX/JSX.
 
