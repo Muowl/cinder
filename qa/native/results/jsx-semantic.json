@@ -1,0 +1,170 @@
+{
+  "file": "sample.jsx",
+  "language": "javascriptreact",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "53acaf63e9dc9d1d4f8d7d9b845e596aad07a553b9df47b0aeb66bc13ddf3c1c",
+  "legend": {
+    "tokenTypes": [
+      "class",
+      "enum",
+      "interface",
+      "namespace",
+      "typeParameter",
+      "type",
+      "parameter",
+      "variable",
+      "enumMember",
+      "property",
+      "function",
+      "method"
+    ],
+    "tokenModifiers": [
+      "declaration",
+      "static",
+      "async",
+      "readonly",
+      "defaultLibrary",
+      "local"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 2,
+      "column": 17,
+      "text": "QueueCard",
+      "type": "function",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 2,
+      "column": 29,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 2,
+      "column": 36,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 2,
+      "column": 47,
+      "text": "children",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 3,
+      "column": 9,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 3,
+      "column": 19,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 5,
+      "column": 44,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 6,
+      "column": 12,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 27,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 38,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 8,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 37,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 9,
+      "column": 8,
+      "text": "children",
+      "type": "parameter",
+      "modifiers": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "ms-vscode.cpptools",
+      "version": "1.35.6"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": []
+}

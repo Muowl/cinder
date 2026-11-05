@@ -1,0 +1,544 @@
+{
+  "file": "sample.ts",
+  "language": "typescript",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "57b7f6917f721b8784ef22ae80f4463dab2ac5feba948d2f31f136ebf5989b31",
+  "legend": {
+    "tokenTypes": [
+      "class",
+      "enum",
+      "interface",
+      "namespace",
+      "typeParameter",
+      "type",
+      "parameter",
+      "variable",
+      "enumMember",
+      "property",
+      "function",
+      "method"
+    ],
+    "tokenModifiers": [
+      "declaration",
+      "static",
+      "async",
+      "readonly",
+      "defaultLibrary",
+      "local"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 2,
+      "column": 18,
+      "text": "Entry",
+      "type": "interface",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 3,
+      "column": 12,
+      "text": "name",
+      "type": "property",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 3,
+      "text": "score",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 7,
+      "column": 13,
+      "text": "Status",
+      "type": "enum",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 7,
+      "column": 22,
+      "text": "Ready",
+      "type": "enumMember",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 7,
+      "column": 29,
+      "text": "Full",
+      "type": "enumMember",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 13,
+      "text": "Result",
+      "type": "type",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 20,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 27,
+      "text": "value",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 34,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 37,
+      "text": "status",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 45,
+      "text": "Status",
+      "type": "enum",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 7,
+      "text": "LIMIT",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 14,
+      "text": "Queue",
+      "type": "class",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 20,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 30,
+      "text": "Entry",
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 20,
+      "text": "items",
+      "type": "property",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 12,
+      "column": 27,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 31,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 15,
+      "column": 9,
+      "text": "push",
+      "type": "method",
+      "modifiers": [
+        "declaration",
+        "async"
+      ]
+    },
+    {
+      "line": 15,
+      "column": 14,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 15,
+      "column": 21,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 25,
+      "text": "Promise",
+      "type": "interface",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 15,
+      "column": 33,
+      "text": "Result",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 11,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 10,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 26,
+      "text": "items",
+      "type": "property",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 32,
+      "text": "length",
+      "type": "property",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 42,
+      "text": "LIMIT",
+      "type": "variable",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 19,
+      "column": 10,
+      "text": "items",
+      "type": "property",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 19,
+      "column": 16,
+      "text": "push",
+      "type": "method",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 19,
+      "column": 21,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 11,
+      "text": "name",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 18,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 24,
+      "text": "name",
+      "type": "property",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 30,
+      "text": "trim",
+      "type": "method",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 21,
+      "column": 5,
+      "text": "console",
+      "type": "variable",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 21,
+      "column": 13,
+      "text": "log",
+      "type": "method",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 21,
+      "column": 25,
+      "text": "label",
+      "type": "property",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 21,
+      "column": 35,
+      "text": "name",
+      "type": "variable",
+      "modifiers": [
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 14,
+      "text": "value",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 26,
+      "text": "items",
+      "type": "property",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 32,
+      "text": "length",
+      "type": "property",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 40,
+      "text": "status",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 48,
+      "text": "Status",
+      "type": "enum",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 55,
+      "text": "Ready",
+      "type": "enumMember",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 7,
+      "text": "pattern",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 14,
+      "text": "scores",
+      "type": "function",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 24,
+      "text": "entries",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 33,
+      "text": "Entry",
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 3,
+      "text": "entries",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 11,
+      "text": "map",
+      "type": "method",
+      "modifiers": [
+        "defaultLibrary"
+      ]
+    },
+    {
+      "line": 28,
+      "column": 18,
+      "text": "score",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 28,
+      "column": 34,
+      "text": "score",
+      "type": "parameter",
+      "modifiers": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "ms-vscode.cpptools",
+      "version": "1.35.6"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 26,
+      "severity": 3,
+      "message": "'pattern' is declared but its value is never read."
+    }
+  ]
+}

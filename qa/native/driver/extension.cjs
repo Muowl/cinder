@@ -25,7 +25,10 @@ exports.activate = function (context) {
       const uri = vscode.Uri.joinPath(folder.uri, request.file);
       const document = await vscode.workspace.openTextDocument(uri);
       const editor = await vscode.window.showTextDocument(document, { preview: false });
-      await vscode.workspace.getConfiguration('editor').update('semanticHighlighting.enabled', request.semantic !== false, vscode.ConfigurationTarget.Global);
+      const scope = { uri, languageId: document.languageId };
+      // Language defaults (notably C/C++) can override an unscoped user setting.
+      await vscode.workspace.getConfiguration('editor', scope).update(
+        'semanticHighlighting.enabled', request.semantic !== false, vscode.ConfigurationTarget.Global, true);
       if (request.size) await vscode.workspace.getConfiguration('editor').update('fontSize', request.size, vscode.ConfigurationTarget.Global);
       const position = new vscode.Position((request.line || 1) - 1, (request.column || 1) - 1);
       editor.selection = new vscode.Selection(position, position);
@@ -33,7 +36,7 @@ exports.activate = function (context) {
       const result = {
         file: request.file, language: document.languageId, vscode: vscode.version,
         theme: vscode.workspace.getConfiguration('workbench').get('colorTheme'),
-        semanticHighlighting: request.semantic !== false,
+        semanticHighlighting: vscode.workspace.getConfiguration('editor', scope).get('semanticHighlighting.enabled'),
         sourceSha256: crypto.createHash('sha256').update(document.getText()).digest('hex'),
       };
       if (request.collect) {

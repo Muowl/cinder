@@ -1,0 +1,220 @@
+{
+  "file": "sample.tsx",
+  "language": "typescriptreact",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "6a8170c4ea6f8d8e444977173b38a052018548f75fb5c97e86a0ccb626ff0377",
+  "legend": {
+    "tokenTypes": [
+      "class",
+      "enum",
+      "interface",
+      "namespace",
+      "typeParameter",
+      "type",
+      "parameter",
+      "variable",
+      "enumMember",
+      "property",
+      "function",
+      "method"
+    ],
+    "tokenModifiers": [
+      "declaration",
+      "static",
+      "async",
+      "readonly",
+      "defaultLibrary",
+      "local"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 3,
+      "column": 11,
+      "text": "QueueProps",
+      "type": "interface",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 3,
+      "text": "label",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 5,
+      "column": 3,
+      "text": "count",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 6,
+      "column": 3,
+      "text": "children",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 6,
+      "column": 14,
+      "text": "ReactNode",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "column": 17,
+      "text": "QueueCard",
+      "type": "function",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 10,
+      "column": 29,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 10,
+      "column": 36,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 10,
+      "column": 43,
+      "text": "children",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 10,
+      "column": 55,
+      "text": "QueueProps",
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 9,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 19,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 44,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 12,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 27,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 38,
+      "text": "count",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 8,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 16,
+      "column": 37,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "readonly",
+        "local"
+      ]
+    },
+    {
+      "line": 17,
+      "column": 8,
+      "text": "children",
+      "type": "parameter",
+      "modifiers": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "ms-vscode.cpptools",
+      "version": "1.35.6"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": []
+}

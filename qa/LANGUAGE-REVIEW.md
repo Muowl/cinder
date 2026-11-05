@@ -1,6 +1,6 @@
 # Cinder 0.3.2 — validação de linguagens
 
-Revisão de 31/10/2026; capturas atualizadas em 04/11/2026 (America/Sao_Paulo).
+Revisão de 31/10/2026; capturas e revisão nativa de 04/11/2026 (America/Sao_Paulo).
 Base: Cinder 0.3.1,
 commit `2241d180fe5067b90710e34b2d1cc3f9c69bafec`.
 
@@ -12,12 +12,16 @@ alterar a paleta, os fundos ou as cores de interface. TypeScript e JavaScript
 mantiveram o comportamento esperado nas amostras, incluindo TSX/JSX, regex,
 templates, async/await, genéricos e campos privados.
 
-Esta etapa aprova as amostras tokenizadas e as regras semânticas testadas.
-Não certifica um resultado perfeito para toda construção ou extensão: a validação
-integrada com os servidores de linguagem ainda não foi concluída.
-O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no Marketplace.
+Esta etapa aprova as amostras tokenizadas, as regras semânticas testadas e os
+trechos inspecionados no VS Code instalado nas nove linguagens. A revisão
+nativa revelou lacunas adicionais em Python/Pylance e C#; as correções foram
+conferidas em novas capturas. Isso não certifica toda construção, extensão ou
+configuração pessoal. O pacote 0.3.2 foi gerado e conferido, sem publicação no Marketplace.
 
 ## Achados e correções
+
+A tabela resume o comparativo TextMate. As diferenças observadas com provedores
+semânticos estão registradas na revisão nativa abaixo.
 
 | Linguagem | Achado e comportamento após o ajuste | Comparação visual |
 |---|---|---|
@@ -51,6 +55,9 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
   de rolagem horizontal. Foram inspecionados os nove comparativos em 15 px e
   amostras densas de Rust/Python em 13 px e C++/C# em 18 px.
 - **Pacote VSIX 0.3.2** gerado com o hook de build/validação.
+- **555 tokens nativos coletados** nas nove linguagens, acompanhados de capturas
+  fornecidas pelo usuário no VS Code 1.144.1. A contagem mede os tokens recebidos,
+  não a quantidade de verificações visuais. [Ambiente e versões](native/environment.json).
 
 Os testes passam após as correções. Na mesma matriz, a versão base falhava em
 29 alvos TextMate e 37 alvos semânticos. São alvos de teste afetados, não uma
@@ -61,8 +68,9 @@ contagem de defeitos independentes.
 [Arquivos de exemplo](fixtures/) ·
 [Matriz de alvos](language-cases.json).
 
-As imagens são renderizações dos tokens produzidos pelas gramáticas, não
-capturas do editor instalado. A [revisão nativa anterior](VISUAL-REVIEW.md)
+As imagens em `languages/screenshots/` são renderizações dos tokens produzidos
+pelas gramáticas. As capturas do editor instalado estão em `native/screenshots/`.
+A [revisão nativa anterior](VISUAL-REVIEW.md)
 tem outro ambiente e outro escopo; ela não substitui esta evidência nem constitui
 uma validação nativa da versão 0.3.2.
 
@@ -72,9 +80,15 @@ O tema recebe classificações de sintaxe; ele não identifica nomes pelo texto.
 Isso deixa limites concretos nas gramáticas básicas testadas:
 
 - A gramática de C não distingue todos os nomes de `typedef` e membros de enum.
+- No ambiente nativo C17, C/C++ 1.35.6 classifica `bool`, `true`, `false` e
+  `NULL` como macros. Com realce semântico, eles recebem Brass, assim como
+  `LIMIT`; isso difere da classificação da gramática TextMate isolada.
 - A gramática de C++ usada no espécime não classifica `requires` como palavra-chave
   e não identifica toda chamada de macro como macro. Não foi criada uma regra
   que pintaria chamadas comuns incorretamente para contornar isso.
+- Em C++ com C/C++ 1.35.6, `requires` não recebe token semântico no exemplo;
+  `limit` recebe `property.static`, sem `readonly`, e mantém a cor de propriedade
+  em itálico. A chamada `CINDER_LOG` é reconhecida como macro pelo servidor.
 - Em Rust, a gramática básica usa o mesmo escopo para `self` e `Self` e não
   distingue o comentário `//!` do comentário comum. Os papéis próprios do
   rust-analyzer permitem uma classificação mais precisa quando disponíveis.
@@ -115,10 +129,38 @@ O modelo não substitui essa revisão nem mede conforto durante sessões longas.
   feita após o carregamento do servidor, confirma documentação sem itálico,
   `Limit` em Heather, `Action<T>` em Steel e `\n` em Glow. Parâmetros e membros
   de enum preservam o estilo esperado.
+- C: foram coletados [39 tokens de C/C++ 1.35.6](native/results/c-semantic.json).
+  O [inspetor](native/screenshots/c-type-inspector.png) confirmou `Queue` como
+  `type`, com cor `#92A9C2`. A primeira exibição não refletia os tokens;
+  desligar e religar o realce semântico especificamente para C atualizou o
+  editor. A [captura final](native/screenshots/c-semantic.png) confirma tipos
+  em Steel, membros de enum em Heather, macros em Brass e parâmetros em itálico.
+  Não foi necessária outra regra no tema.
+- C++: foram coletados [43 tokens de C/C++ 1.35.6](native/results/cpp-semantic.json).
+  A [captura nativa](native/screenshots/cpp-semantic.png) confirma tipos em Steel,
+  membros de enum em Heather, `CINDER_LOG` e `[[nodiscard]]` em Brass, funções
+  e a lambda em Antique Gold, e parâmetros em itálico. Os limites de `requires`
+  e `limit` estão registrados acima.
+- TypeScript: foram coletados [54 tokens do provedor integrado](native/results/typescript-semantic.json).
+  A [captura nativa](native/screenshots/typescript-semantic.png) confirma interfaces
+  e tipos em Steel, membros de enum e constantes em Heather, parâmetros em
+  itálico e os destaques da interpolação e da expressão regular.
+- JavaScript: foram coletados [30 tokens do provedor integrado](native/results/javascript-semantic.json).
+  A [captura nativa](native/screenshots/javascript-semantic.png) confirma a classe
+  em Steel, constantes em Heather, parâmetros em itálico, documentação sem
+  itálico e comentários comuns em itálico. Campos privados, interpolação e
+  expressão regular mantêm a separação visual esperada.
+- TSX / JSX: foram coletados [19 tokens de TSX](native/results/tsx-semantic.json)
+  e [13 de JSX](native/results/jsx-semantic.json), com `@types/react` 19.3.0 no
+  workspace de QA e sem diagnósticos nesses arquivos. As capturas de
+  [TSX](native/screenshots/tsx-semantic.png) e [JSX](native/screenshots/jsx-semantic.png)
+  confirmam tags, atributos, texto, entidades e expressões distintos, incluindo
+  o componente, a interpolação e `&amp;`.
 
-Faltam as verificações nativas de C/C++ e TypeScript/JavaScript, incluindo
-TSX/JSX. O PR e a Release 0.3.2 permanecem
-em rascunho até a conclusão dessa revisão.
+A revisão nativa planejada está concluída para os trechos e ambientes descritos.
+Os limites de classificação acima permanecem válidos; não houve medição de
+conforto durante sessões longas nem teste de todas as configurações pessoais.
+O VSIX está anexado à Release 0.3.2 em rascunho; essa revisão não publica a extensão.
 
 ## Reprodução
 
