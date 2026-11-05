@@ -35,11 +35,12 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
 - **106 verificações TextMate**, usando Shiki 4.5.0 com Oniguruma e nove gramáticas
   fixadas no lockfile. Cada verificação identifica um trecho do arquivo de exemplo
   e confere a cor efetivamente produzida e, quando pertinente, o itálico.
-- **74 verificações de seletores semânticos**, com tipos comuns às sete linguagens
-  e tipos personalizados do rust-analyzer. O modelo reproduz a pontuação de
+- **79 verificações de seletores semânticos**, com tipos comuns às sete linguagens,
+  tipos personalizados do rust-analyzer e modificadores de decoradores do Pylance.
+  O modelo reproduz a pontuação de
   seletores, a herança de tipos e a resolução independente de propriedades do
   VS Code. Não executa um servidor de linguagem nem reproduz todo o serviço de temas.
-- **854 verificações de contraste**: mínimo de 4,5:1 para os pares de leitura
+- **862 verificações de contraste**: mínimo de 4,5:1 para os pares de leitura
   definidos e de 3:1 para os indicadores testados. Comentários: 6,68:1 no editor
   e 5,05:1 sobre a seleção da linha ativa. Os limites já descritos em
   [DESIGN.md](../DESIGN.md) continuam aplicáveis.
@@ -52,7 +53,7 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
 - **Pacote VSIX 0.3.2** gerado com o hook de build/validação.
 
 Os testes passam após as correções. Na mesma matriz, a versão base falhava em
-29 alvos TextMate e 22 alvos semânticos. São alvos de teste afetados, não uma
+29 alvos TextMate e 24 alvos semânticos. São alvos de teste afetados, não uma
 contagem de defeitos independentes.
 
 [Resultados com cores, estilos e escopos](languages/results.json) ·
@@ -83,17 +84,25 @@ Isso deixa limites concretos nas gramáticas básicas testadas:
 - Em C#, o atributo `Obsolete` é classificado como tipo pela gramática testada;
   por isso mantém Steel. Pintar todos os tipos como decoradores prejudicaria o restante.
 
-A cobertura com realce semântico habilitado nesta sessão é de **regras e
-seletores**. Falta a verificação integrada com os tokens emitidos ao vivo pelo
-rust-analyzer, C/C++ ou clangd, C#, Python/Pylance e TypeScript do editor instalado,
-incluindo preferências pessoais, fonte e renderização do host. O modelo não
-substitui esse teste e não mede conforto durante sessões longas.
+Os testes automatizados de seletores modelam regras do tema; eles não executam
+servidores de linguagem. A revisão integrada começou em 04/11/2026 no VS Code
+1.144.1, em um perfil separado no Windows, com capturas fornecidas pelo usuário.
+O modelo não substitui essa revisão nem mede conforto durante sessões longas.
 
-Em 04/11/2026, o VSIX 0.3.2 foi instalado em um perfil separado do VS Code
-1.144.1 no Windows. A tentativa de revisão nativa ficou pendente: o workspace
-abriu em modo restrito, e o serviço de automação de janelas estava indisponível.
-Essa preparação não conta como aprovação visual nem como teste de servidores
-de linguagem. O PR e a Release 0.3.2 permanecem em rascunho até essa revisão.
+- Rust: foram coletados [121 tokens do rust-analyzer 0.3.3105](native/results/rust-semantic.json).
+  As capturas com realce semântico [ligado](native/screenshots/rust-semantic-comments.png)
+  e [desligado](native/screenshots/rust-textmate-comments.png) confirmam `///` sem itálico e o comentário
+  comum em itálico. Essa aprovação se limita aos comentários inspecionados.
+- Python: foram coletados [67 tokens do Pylance 2026.4.1](native/results/python-semantic.json).
+  A [captura inicial](native/screenshots/python-before-decorator-fix.png) revelou
+  `@property` azul e `@dataclass` com a cor de função: o provedor emite tipos
+  `class` e `function` com o modificador `decorator`. A regra
+  `*.decorator:python` corrige esses casos nos testes. A [captura após a correção](native/screenshots/python-after-decorator-fix.png)
+  confirma os dois decoradores em Brass e itálico com o Pylance ativo.
+
+Faltam as verificações nativas de C/C++, C# e TypeScript/JavaScript, incluindo
+TSX/JSX. O PR e a Release 0.3.2 permanecem
+em rascunho até a conclusão dessa revisão.
 
 ## Reprodução
 

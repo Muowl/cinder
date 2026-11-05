@@ -1,0 +1,1144 @@
+{
+  "file": "sample.rs",
+  "language": "rust",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "e67281be1b751399395fc858df7a2815eeafec56331dfe566fd9aed93a51a1e4",
+  "legend": {
+    "tokenTypes": [
+      "comment",
+      "decorator",
+      "enumMember",
+      "enum",
+      "function",
+      "interface",
+      "keyword",
+      "macro",
+      "method",
+      "namespace",
+      "number",
+      "operator",
+      "parameter",
+      "property",
+      "string",
+      "struct",
+      "typeParameter",
+      "variable",
+      "type",
+      "label",
+      "angle",
+      "arithmetic",
+      "attributeBracket",
+      "attribute",
+      "bitwise",
+      "boolean",
+      "brace",
+      "bracket",
+      "builtinAttribute",
+      "builtinType",
+      "character",
+      "colon",
+      "comma",
+      "comparison",
+      "constParameter",
+      "const",
+      "deriveHelper",
+      "derive",
+      "dot",
+      "escapeSequence",
+      "formatSpecifier",
+      "generic",
+      "invalidEscapeSequence",
+      "lifetime",
+      "logical",
+      "macroBang",
+      "negation",
+      "parenthesis",
+      "procMacro",
+      "punctuation",
+      "selfKeyword",
+      "selfTypeKeyword",
+      "semicolon",
+      "static",
+      "toolModule",
+      "typeAlias",
+      "union",
+      "unresolvedReference"
+    ],
+    "tokenModifiers": [
+      "async",
+      "documentation",
+      "declaration",
+      "static",
+      "defaultLibrary",
+      "deprecated",
+      "associated",
+      "attribute",
+      "callable",
+      "constant",
+      "consuming",
+      "controlFlow",
+      "crateRoot",
+      "injected",
+      "intraDocLink",
+      "library",
+      "macro",
+      "mutable",
+      "procMacro",
+      "public",
+      "reference",
+      "trait",
+      "unsafe"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 1,
+      "column": 1,
+      "text": "//! Small queue used to exercise Rust syntax, not an application.",
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ]
+    },
+    {
+      "line": 2,
+      "column": 1,
+      "text": "use",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 5,
+      "text": "std",
+      "type": "namespace",
+      "modifiers": [
+        "defaultLibrary",
+        "crateRoot",
+        "library"
+      ]
+    },
+    {
+      "line": 2,
+      "column": 8,
+      "text": "::",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 10,
+      "text": "fmt",
+      "type": "namespace",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 2,
+      "column": 13,
+      "text": "::",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 15,
+      "text": "Debug",
+      "type": "interface",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 1,
+      "text": "#",
+      "type": "attributeBracket",
+      "modifiers": [
+        "attribute"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 2,
+      "text": "[",
+      "type": "attributeBracket",
+      "modifiers": [
+        "attribute"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 3,
+      "text": "derive",
+      "type": "decorator",
+      "modifiers": [
+        "defaultLibrary",
+        "attribute",
+        "library"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 10,
+      "text": "Debug",
+      "type": "derive",
+      "modifiers": [
+        "defaultLibrary",
+        "attribute",
+        "library",
+        "macro"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 17,
+      "text": "Clone",
+      "type": "derive",
+      "modifiers": [
+        "defaultLibrary",
+        "attribute",
+        "library",
+        "macro"
+      ]
+    },
+    {
+      "line": 4,
+      "column": 23,
+      "text": "]",
+      "type": "attributeBracket",
+      "modifiers": [
+        "attribute"
+      ]
+    },
+    {
+      "line": 5,
+      "column": 1,
+      "text": "pub",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 5,
+      "column": 5,
+      "text": "struct",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 5,
+      "column": 12,
+      "text": "Queue",
+      "type": "struct",
+      "modifiers": [
+        "declaration",
+        "public"
+      ]
+    },
+    {
+      "line": 5,
+      "column": 18,
+      "text": "'a",
+      "type": "lifetime",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 5,
+      "column": 22,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 5,
+      "column": 25,
+      "text": "Debug",
+      "type": "interface",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 6,
+      "column": 5,
+      "text": "label",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 6,
+      "column": 13,
+      "text": "'a",
+      "type": "lifetime",
+      "modifiers": []
+    },
+    {
+      "line": 6,
+      "column": 16,
+      "text": "str",
+      "type": "builtinType",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 5,
+      "text": "items",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 7,
+      "column": 12,
+      "text": "Vec",
+      "type": "struct",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 7,
+      "column": 16,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "column": 1,
+      "text": "pub",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "column": 5,
+      "text": "trait",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "column": 11,
+      "text": "Summary",
+      "type": "interface",
+      "modifiers": [
+        "declaration",
+        "public"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 5,
+      "text": "fn",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 8,
+      "text": "summary",
+      "type": "method",
+      "modifiers": [
+        "declaration",
+        "associated",
+        "public",
+        "reference",
+        "trait"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 17,
+      "text": "self",
+      "type": "selfKeyword",
+      "modifiers": [
+        "declaration",
+        "reference"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 23,
+      "text": "->",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 26,
+      "text": "String",
+      "type": "struct",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 1,
+      "text": "impl",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 6,
+      "text": "'a",
+      "type": "lifetime",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 10,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 13,
+      "text": "Debug",
+      "type": "interface",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 20,
+      "text": "Queue",
+      "type": "struct",
+      "modifiers": [
+        "public"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 26,
+      "text": "'a",
+      "type": "lifetime",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 30,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 5,
+      "text": "/// Creates an empty queue with a borrowed label.",
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ]
+    },
+    {
+      "line": 16,
+      "column": 5,
+      "text": "pub",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 9,
+      "text": "fn",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 12,
+      "text": "new",
+      "type": "function",
+      "modifiers": [
+        "declaration",
+        "static",
+        "associated",
+        "public"
+      ]
+    },
+    {
+      "line": 16,
+      "column": 16,
+      "text": "label",
+      "type": "parameter",
+      "modifiers": [
+        "declaration",
+        "reference"
+      ]
+    },
+    {
+      "line": 16,
+      "column": 24,
+      "text": "'a",
+      "type": "lifetime",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 27,
+      "text": "str",
+      "type": "builtinType",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 32,
+      "text": "->",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 35,
+      "text": "Self",
+      "type": "selfTypeKeyword",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 9,
+      "text": "Self",
+      "type": "selfTypeKeyword",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 16,
+      "text": "label",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 23,
+      "text": "items",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 30,
+      "text": "Vec",
+      "type": "struct",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 17,
+      "column": 33,
+      "text": "::",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 35,
+      "text": "new",
+      "type": "function",
+      "modifiers": [
+        "static",
+        "defaultLibrary",
+        "associated",
+        "constant",
+        "library"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 5,
+      "text": "pub",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 9,
+      "text": "fn",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 12,
+      "text": "push",
+      "type": "method",
+      "modifiers": [
+        "declaration",
+        "associated",
+        "mutable",
+        "public",
+        "reference"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 18,
+      "text": "mut",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 22,
+      "text": "self",
+      "type": "selfKeyword",
+      "modifiers": [
+        "declaration",
+        "mutable",
+        "reference"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 28,
+      "text": "item",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 34,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 37,
+      "text": "->",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 40,
+      "text": "Result",
+      "type": "enum",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 47,
+      "text": "usize",
+      "type": "builtinType",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 55,
+      "text": "'static",
+      "type": "lifetime",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 63,
+      "text": "str",
+      "type": "builtinType",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 9,
+      "text": "// TODO: persist items after validating the queue.",
+      "type": "comment",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 9,
+      "text": "const",
+      "type": "keyword",
+      "modifiers": [
+        "constant"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 15,
+      "text": "LIMIT",
+      "type": "const",
+      "modifiers": [
+        "declaration",
+        "constant"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 22,
+      "text": "usize",
+      "type": "builtinType",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 28,
+      "text": "=",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 30,
+      "text": "32",
+      "type": "number",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 9,
+      "text": "let",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 13,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 23,
+      "column": 22,
+      "text": "bool",
+      "type": "builtinType",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 27,
+      "text": "=",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 29,
+      "text": "true",
+      "type": "boolean",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 9,
+      "text": "if",
+      "type": "keyword",
+      "modifiers": [
+        "controlFlow"
+      ]
+    },
+    {
+      "line": 24,
+      "column": 12,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 20,
+      "text": "&&",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 23,
+      "text": "self",
+      "type": "selfKeyword",
+      "modifiers": [
+        "mutable",
+        "reference"
+      ]
+    },
+    {
+      "line": 24,
+      "column": 27,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 28,
+      "text": "items",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 33,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 34,
+      "text": "len",
+      "type": "method",
+      "modifiers": [
+        "defaultLibrary",
+        "constant",
+        "library",
+        "reference"
+      ]
+    },
+    {
+      "line": 24,
+      "column": 40,
+      "text": "<",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 42,
+      "text": "LIMIT",
+      "type": "const",
+      "modifiers": [
+        "constant"
+      ]
+    },
+    {
+      "line": 25,
+      "column": 13,
+      "text": "self",
+      "type": "selfKeyword",
+      "modifiers": [
+        "mutable",
+        "reference"
+      ]
+    },
+    {
+      "line": 25,
+      "column": 17,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "column": 18,
+      "text": "items",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "column": 23,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "column": 24,
+      "text": "push",
+      "type": "method",
+      "modifiers": [
+        "defaultLibrary",
+        "library",
+        "mutable",
+        "reference"
+      ]
+    },
+    {
+      "line": 25,
+      "column": 29,
+      "text": "item",
+      "type": "parameter",
+      "modifiers": [
+        "consuming"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 13,
+      "text": "println",
+      "type": "macro",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 20,
+      "text": "!",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 22,
+      "text": "\"",
+      "type": "string",
+      "modifiers": [
+        "macro"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 23,
+      "text": "{",
+      "type": "formatSpecifier",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 24,
+      "text": "}",
+      "type": "formatSpecifier",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 25,
+      "text": ": ",
+      "type": "string",
+      "modifiers": [
+        "macro"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 27,
+      "text": "{",
+      "type": "formatSpecifier",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 28,
+      "text": ":",
+      "type": "formatSpecifier",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 29,
+      "text": "?",
+      "type": "formatSpecifier",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 30,
+      "text": "}",
+      "type": "formatSpecifier",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 31,
+      "text": "\\n",
+      "type": "escapeSequence",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 33,
+      "text": "\"",
+      "type": "string",
+      "modifiers": [
+        "macro"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 36,
+      "text": "self",
+      "type": "selfKeyword",
+      "modifiers": [
+        "macro",
+        "mutable",
+        "reference"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 40,
+      "text": ".",
+      "type": "operator",
+      "modifiers": [
+        "macro"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 41,
+      "text": "label",
+      "type": "property",
+      "modifiers": [
+        "macro"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 48,
+      "text": "self",
+      "type": "selfKeyword",
+      "modifiers": [
+        "macro",
+        "mutable",
+        "reference"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 52,
+      "text": ".",
+      "type": "operator",
+      "modifiers": [
+        "macro"
+      ]
+    },
+    {
+      "line": 26,
+      "column": 53,
+      "text": "items",
+      "type": "property",
+      "modifiers": [
+        "macro"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 13,
+      "text": "Ok",
+      "type": "enumMember",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 16,
+      "text": "self",
+      "type": "selfKeyword",
+      "modifiers": [
+        "mutable",
+        "reference"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 20,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 21,
+      "text": "items",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 26,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 27,
+      "text": "len",
+      "type": "method",
+      "modifiers": [
+        "defaultLibrary",
+        "constant",
+        "library",
+        "reference"
+      ]
+    },
+    {
+      "line": 28,
+      "column": 11,
+      "text": "else",
+      "type": "keyword",
+      "modifiers": [
+        "controlFlow"
+      ]
+    },
+    {
+      "line": 29,
+      "column": 13,
+      "text": "Err",
+      "type": "enumMember",
+      "modifiers": [
+        "defaultLibrary",
+        "library"
+      ]
+    },
+    {
+      "line": 29,
+      "column": 17,
+      "text": "\"queue full\"",
+      "type": "string",
+      "modifiers": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": []
+}

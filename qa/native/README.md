@@ -2,9 +2,11 @@
 
 O driver local coleta os tokens semânticos emitidos pelas extensões do VS Code.
 Ele não cria tokens simulados e não substitui a inspeção visual do editor.
-Não há resultados nativos aprovados para 0.3.2 nesta pasta: a sessão de
-04/11/2026 ficou bloqueada pelo modo restrito e pela indisponibilidade da
-automação de janelas.
+A revisão de 0.3.2 está em andamento, com tokens coletados pelo driver e
+capturas fornecidas pelo usuário. Os comentários Rust foram conferidos nos
+dois modos de realce; Python revelou uma lacuna nos decoradores do Pylance.
+O [relatório de linguagens](../LANGUAGE-REVIEW.md) registra o progresso e as
+verificações que ainda faltam.
 
 ## Preparação
 

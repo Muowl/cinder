@@ -4693,6 +4693,112 @@
           "foreground": "#EC8F68"
         }
       }
+    },
+    {
+      "type": "class",
+      "modifiers": [
+        "decorator",
+        "builtin"
+      ],
+      "lang": "python",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [
+        "decorator",
+        "library"
+      ],
+      "lang": "python",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "class",
+      "modifiers": [
+        "builtin"
+      ],
+      "lang": "python",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [
+        "library"
+      ],
+      "lang": "python",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "class",
+      "modifiers": [
+        "decorator"
+      ],
+      "lang": "typescript",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
     }
   ]
 }

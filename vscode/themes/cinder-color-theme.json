@@ -1163,6 +1163,10 @@
       "foreground": "#CBA32D",
       "italic": true
     },
+    "*.decorator:python": {
+      "foreground": "#CBA32D",
+      "italic": true
+    },
     "macro": {
       "foreground": "#CBA32D",
       "italic": true

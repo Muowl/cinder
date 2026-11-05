@@ -112,6 +112,12 @@ const semanticCases = [
   ['procMacro', [], 'rust', 'syntax.decorator', true],
   ['arithmetic', [], 'rust', 'syntax.operator'],
   ['selfKeyword', [], 'rust', 'syntax.keyword'],
+  // Captured from Pylance 2026.4.1 in the installed VS Code QA profile.
+  ['class', ['decorator', 'builtin'], 'python', 'syntax.decorator', true],
+  ['function', ['decorator', 'library'], 'python', 'syntax.decorator', true],
+  ['class', ['builtin'], 'python', 'syntax.type'],
+  ['function', ['library'], 'python', 'syntax.function'],
+  ['class', ['decorator'], 'typescript', 'syntax.type'],
 ];
 const semanticResults = semanticCases.map(([type, modifiers, lang, role, italic]) => {
   function inspect(t) {

@@ -1153,6 +1153,10 @@
       "foreground": "{syntax.decorator}",
       "italic": true
     },
+    "*.decorator:python": {
+      "foreground": "{syntax.decorator}",
+      "italic": true
+    },
     "macro": {
       "foreground": "{syntax.decorator}",
       "italic": true

@@ -5,6 +5,8 @@
 - Align C/C++ built-in types and C++ lambda return types with the Steel type color.
 - Cover C# enum members, parameters and interpolation delimiters.
 - Align Python call targets, built-in decorators and f-string formatting colors.
+- Keep Python decorators Brass and italic when Pylance emits a class or function
+  token with the `decorator` modifier, including `@property` and `@dataclass`.
 - Cover Rust and C/C++ macros, Rust/C++ attributes and Rust lifetimes.
 - Add rust-analyzer semantic roles, including boolean literals, format specifiers,
   attributes and operator inheritance; keep documentation comments upright,
