@@ -4,6 +4,8 @@
 
 - Align C/C++ built-in types and C++ lambda return types with the Steel type color.
 - Cover C# enum members, parameters and interpolation delimiters.
+- Cover C# semantic tokens for XML documentation, constants, delegates and
+  string escapes; XML documentation stays upright with the C# server active.
 - Align Python call targets, built-in decorators and f-string formatting colors.
 - Keep Python decorators Brass and italic when Pylance emits a class or function
   token with the `decorator` modifier, including `@property` and `@dataclass`.

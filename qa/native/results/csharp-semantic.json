@@ -1,0 +1,1328 @@
+{
+  "file": "sample.cs",
+  "language": "csharp",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "811dfcfa55f9b0905600474f1f1a4aba64d1e3ab8f30bbb22d89244ac49fa62b",
+  "legend": {
+    "tokenTypes": [
+      "namespace",
+      "type",
+      "class",
+      "enum",
+      "interface",
+      "struct",
+      "typeParameter",
+      "parameter",
+      "variable",
+      "property",
+      "enumMember",
+      "event",
+      "function",
+      "method",
+      "macro",
+      "keyword",
+      "modifier",
+      "comment",
+      "string",
+      "number",
+      "regexp",
+      "operator",
+      "decorator",
+      "array",
+      "constant",
+      "controlKeyword",
+      "delegate",
+      "excludedCode",
+      "extensionMethod",
+      "field",
+      "functionPointer",
+      "jsonArray",
+      "jsonComment",
+      "jsonConstructorName",
+      "jsonKeyword",
+      "jsonNumber",
+      "jsonObject",
+      "jsonOperator",
+      "jsonPropertyName",
+      "jsonPunctuation",
+      "jsonString",
+      "jsonText",
+      "label",
+      "module",
+      "operatorOverloaded",
+      "pointer",
+      "preprocessorText",
+      "punctuation",
+      "recordClass",
+      "recordStruct",
+      "regexAlternation",
+      "regexAnchor",
+      "regexCharacterClass",
+      "regexComment",
+      "regexGrouping",
+      "regexOtherEscape",
+      "regexQuantifier",
+      "regexSelfEscapedCharacter",
+      "regexText",
+      "stringEscapeCharacter",
+      "stringVerbatim",
+      "testCodeMarkdown",
+      "text",
+      "whitespace",
+      "xmlDocCommentAttributeName",
+      "xmlDocCommentAttributeQuotes",
+      "xmlDocCommentAttributeValue",
+      "xmlDocCommentCDataSection",
+      "xmlDocCommentComment",
+      "xmlDocCommentDelimiter",
+      "xmlDocCommentEntityReference",
+      "xmlDocCommentName",
+      "xmlDocCommentProcessingInstruction",
+      "xmlDocCommentText",
+      "xmlLiteralAttributeName",
+      "xmlLiteralAttributeQuotes",
+      "xmlLiteralAttributeValue",
+      "xmlLiteralCDataSection",
+      "xmlLiteralComment",
+      "xmlLiteralDelimiter",
+      "xmlLiteralEmbeddedExpression",
+      "xmlLiteralEntityReference",
+      "xmlLiteralName",
+      "xmlLiteralProcessingInstruction",
+      "xmlLiteralText"
+    ],
+    "tokenModifiers": [
+      "static",
+      "ReassignedVariable",
+      "deprecated"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 1,
+      "column": 1,
+      "text": "using",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 1,
+      "column": 7,
+      "text": "System",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 1,
+      "column": 13,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 1,
+      "text": "using",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 7,
+      "text": "System",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 13,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 14,
+      "text": "Collections",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 25,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 26,
+      "text": "Generic",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 33,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 1,
+      "text": "using",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 7,
+      "text": "System",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 13,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 14,
+      "text": "Threading",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 23,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 24,
+      "text": "Tasks",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 29,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 5,
+      "column": 1,
+      "text": "namespace",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 5,
+      "column": 11,
+      "text": "Cinder",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 5,
+      "column": 17,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 1,
+      "text": "///",
+      "type": "xmlDocCommentDelimiter",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 4,
+      "text": " ",
+      "type": "xmlDocCommentText",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 5,
+      "text": "<",
+      "type": "xmlDocCommentDelimiter",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 6,
+      "text": "summary",
+      "type": "xmlDocCommentName",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 13,
+      "text": ">",
+      "type": "xmlDocCommentDelimiter",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 14,
+      "text": "A queue with a bounded capacity.",
+      "type": "xmlDocCommentText",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 46,
+      "text": "</",
+      "type": "xmlDocCommentDelimiter",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 48,
+      "text": "summary",
+      "type": "xmlDocCommentName",
+      "modifiers": []
+    },
+    {
+      "line": 7,
+      "column": 55,
+      "text": ">",
+      "type": "xmlDocCommentDelimiter",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 1,
+      "text": "[",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 2,
+      "text": "Obsolete",
+      "type": "class",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 10,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 11,
+      "text": "\"Syntax fixture only\"",
+      "type": "string",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 32,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 8,
+      "column": 33,
+      "text": "]",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 1,
+      "text": "public",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 8,
+      "text": "sealed",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 15,
+      "text": "class",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 21,
+      "text": "Queue",
+      "type": "namespace",
+      "modifiers": [
+        "deprecated"
+      ]
+    },
+    {
+      "line": 9,
+      "column": 26,
+      "text": "<",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 27,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 28,
+      "text": ">",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 30,
+      "text": "where",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 36,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 38,
+      "text": ":",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 40,
+      "text": "notnull",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "column": 1,
+      "text": "{",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 5,
+      "text": "private",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 13,
+      "text": "readonly",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 22,
+      "text": "List",
+      "type": "class",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 26,
+      "text": "<",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 27,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 28,
+      "text": ">",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 30,
+      "text": "_items",
+      "type": "field",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 37,
+      "text": "=",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 39,
+      "text": "new",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 42,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 43,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 44,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 5,
+      "text": "public",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 12,
+      "text": "const",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 18,
+      "text": "int",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 22,
+      "text": "Limit",
+      "type": "constant",
+      "modifiers": [
+        "static"
+      ]
+    },
+    {
+      "line": 12,
+      "column": 28,
+      "text": "=",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 30,
+      "text": "32",
+      "type": "number",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 32,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 5,
+      "text": "public",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 12,
+      "text": "int",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 16,
+      "text": "Count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 22,
+      "text": "=>",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 25,
+      "text": "_items",
+      "type": "field",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 31,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 32,
+      "text": "Count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 37,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 5,
+      "text": "public",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 12,
+      "text": "event",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 18,
+      "text": "Action",
+      "type": "delegate",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 24,
+      "text": "<",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 25,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 26,
+      "text": ">",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 27,
+      "text": "?",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 29,
+      "text": "Added",
+      "type": "event",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 34,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 5,
+      "text": "public",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 12,
+      "text": "async",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 18,
+      "text": "Task",
+      "type": "class",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 22,
+      "text": "<",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 23,
+      "text": "bool",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 27,
+      "text": ">",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 29,
+      "text": "PushAsync",
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 38,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 39,
+      "text": "T",
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 41,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 46,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 5,
+      "text": "{",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 18,
+      "column": 9,
+      "text": "// TODO: persist the item.",
+      "type": "comment",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 9,
+      "text": "await",
+      "type": "controlKeyword",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 15,
+      "text": "Task",
+      "type": "class",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 19,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 20,
+      "text": "Yield",
+      "type": "method",
+      "modifiers": [
+        "static"
+      ]
+    },
+    {
+      "line": 19,
+      "column": 25,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 26,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 27,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 9,
+      "text": "if",
+      "type": "controlKeyword",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 12,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 13,
+      "text": "Count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 19,
+      "text": ">=",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 22,
+      "text": "Limit",
+      "type": "constant",
+      "modifiers": [
+        "static"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 27,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 29,
+      "text": "return",
+      "type": "controlKeyword",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 36,
+      "text": "false",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 41,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 9,
+      "text": "_items",
+      "type": "field",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 15,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 16,
+      "text": "Add",
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 19,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 20,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 25,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 26,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 9,
+      "text": "Added",
+      "type": "event",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 14,
+      "text": "?",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 15,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 16,
+      "text": "Invoke",
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 22,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 23,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 28,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 29,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 9,
+      "text": "Console",
+      "type": "class",
+      "modifiers": [
+        "static"
+      ]
+    },
+    {
+      "line": 23,
+      "column": 16,
+      "text": ".",
+      "type": "operator",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 17,
+      "text": "WriteLine",
+      "type": "method",
+      "modifiers": [
+        "static"
+      ]
+    },
+    {
+      "line": 23,
+      "column": 26,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 27,
+      "text": "$\"",
+      "type": "string",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 29,
+      "text": "Count: ",
+      "type": "string",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 36,
+      "text": "{",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 37,
+      "text": "Count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 42,
+      "text": ":",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 43,
+      "text": "D2",
+      "type": "string",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 45,
+      "text": "}",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 46,
+      "text": "\\n",
+      "type": "stringEscapeCharacter",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 48,
+      "text": "\"",
+      "type": "string",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 49,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 50,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 9,
+      "text": "return",
+      "type": "controlKeyword",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 16,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 22,
+      "text": "is",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 25,
+      "text": "not",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 29,
+      "text": "null",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 33,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "column": 5,
+      "text": "}",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 1,
+      "text": "}",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 1,
+      "text": "public",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 8,
+      "text": "record",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 15,
+      "text": "Entry",
+      "type": "recordClass",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 20,
+      "text": "(",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 21,
+      "text": "string",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 28,
+      "text": "Name",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 32,
+      "text": ",",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 34,
+      "text": "int",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 38,
+      "text": "Score",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 43,
+      "text": ")",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 44,
+      "text": ";",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 1,
+      "text": "public",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 8,
+      "text": "enum",
+      "type": "keyword",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 13,
+      "text": "Status",
+      "type": "enum",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 20,
+      "text": "{",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 22,
+      "text": "Ready",
+      "type": "enumMember",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 27,
+      "text": ",",
+      "type": "punctuation",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 29,
+      "text": "Full",
+      "type": "enumMember",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 34,
+      "text": "}",
+      "type": "punctuation",
+      "modifiers": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 11,
+      "severity": 3,
+      "message": "Collection initialization can be simplified"
+    }
+  ]
+}

@@ -35,12 +35,12 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
 - **106 verificações TextMate**, usando Shiki 4.5.0 com Oniguruma e nove gramáticas
   fixadas no lockfile. Cada verificação identifica um trecho do arquivo de exemplo
   e confere a cor efetivamente produzida e, quando pertinente, o itálico.
-- **79 verificações de seletores semânticos**, com tipos comuns às sete linguagens,
-  tipos personalizados do rust-analyzer e modificadores de decoradores do Pylance.
+- **93 verificações de seletores semânticos**, com tipos comuns às sete linguagens,
+  tipos personalizados do rust-analyzer e C# e modificadores de decoradores do Pylance.
   O modelo reproduz a pontuação de
   seletores, a herança de tipos e a resolução independente de propriedades do
   VS Code. Não executa um servidor de linguagem nem reproduz todo o serviço de temas.
-- **862 verificações de contraste**: mínimo de 4,5:1 para os pares de leitura
+- **966 verificações de contraste**: mínimo de 4,5:1 para os pares de leitura
   definidos e de 3:1 para os indicadores testados. Comentários: 6,68:1 no editor
   e 5,05:1 sobre a seleção da linha ativa. Os limites já descritos em
   [DESIGN.md](../DESIGN.md) continuam aplicáveis.
@@ -53,7 +53,7 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
 - **Pacote VSIX 0.3.2** gerado com o hook de build/validação.
 
 Os testes passam após as correções. Na mesma matriz, a versão base falhava em
-29 alvos TextMate e 24 alvos semânticos. São alvos de teste afetados, não uma
+29 alvos TextMate e 37 alvos semânticos. São alvos de teste afetados, não uma
 contagem de defeitos independentes.
 
 [Resultados com cores, estilos e escopos](languages/results.json) ·
@@ -83,6 +83,11 @@ Isso deixa limites concretos nas gramáticas básicas testadas:
   com a cor de string porque a gramática as emite assim.
 - Em C#, o atributo `Obsolete` é classificado como tipo pela gramática testada;
   por isso mantém Steel. Pintar todos os tipos como decoradores prejudicaria o restante.
+- Com o servidor C# 2.160.4, `int` e `bool` chegam como `keyword`, sem indicação
+  de tipo básico, e usam Coral. As chaves de interpolação chegam como
+  `punctuation`, assim como a pontuação comum: a regra TextMate de Glow não
+  garante a mesma cor com esse provedor. Não foram criadas regras amplas que
+  mudariam todas as palavras-chave ou toda a pontuação para contornar esses casos.
 
 Os testes automatizados de seletores modelam regras do tema; eles não executam
 servidores de linguagem. A revisão integrada começou em 04/11/2026 no VS Code
@@ -99,8 +104,19 @@ O modelo não substitui essa revisão nem mede conforto durante sessões longas.
   `class` e `function` com o modificador `decorator`. A regra
   `*.decorator:python` corrige esses casos nos testes. A [captura após a correção](native/screenshots/python-after-decorator-fix.png)
   confirma os dois decoradores em Brass e itálico com o Pylance ativo.
+- C#: foram coletados [169 tokens do servidor 2.160.4](native/results/csharp-semantic.json).
+  A [captura inicial](native/screenshots/csharp-before-native-fixes.png) confirma
+  parâmetros em itálico e membros de enum em Heather, mas revelou documentação
+  XML em itálico. Os tipos específicos do provedor também faziam `Limit` herdar
+  a cor de variável, `Action<T>` a de método e `\n` a de string. Foram adicionadas
+  regras para documentação XML, constantes, delegates e escapes, com testes
+  baseados nas [contribuições da extensão instalada](csharp-tokens.json).
+  A [captura após a correção](native/screenshots/csharp-after-native-fixes.png),
+  feita após o carregamento do servidor, confirma documentação sem itálico,
+  `Limit` em Heather, `Action<T>` em Steel e `\n` em Glow. Parâmetros e membros
+  de enum preservam o estilo esperado.
 
-Faltam as verificações nativas de C/C++, C# e TypeScript/JavaScript, incluindo
+Faltam as verificações nativas de C/C++ e TypeScript/JavaScript, incluindo
 TSX/JSX. O PR e a Release 0.3.2 permanecem
 em rascunho até a conclusão dessa revisão.
 

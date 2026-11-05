@@ -4799,6 +4799,266 @@
           "foreground": "#92A9C2"
         }
       }
+    },
+    {
+      "type": "xmlDocCommentAttributeName",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentAttributeQuotes",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentAttributeValue",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentCDataSection",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentComment",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentDelimiter",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentEntityReference",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentName",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentProcessingInstruction",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentText",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "constant",
+      "modifiers": [
+        "static"
+      ],
+      "lang": "csharp",
+      "role": "syntax.constant",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "delegate",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "stringEscapeCharacter",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#F3B69C"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.comment",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      }
     }
   ]
 }

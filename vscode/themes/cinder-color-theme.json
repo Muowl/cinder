@@ -1213,6 +1213,49 @@
     "invalidEscapeSequence:rust": "#E58177",
     "punctuation:rust": "#A69E93",
     "operator:rust": "#ABA399",
+    "constant:csharp": "#BE97B8",
+    "delegate:csharp": "#92A9C2",
+    "stringEscapeCharacter:csharp": "#F3B69C",
+    "xmlDocCommentAttributeName:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentAttributeQuotes:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentAttributeValue:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentCDataSection:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentComment:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentDelimiter:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentEntityReference:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentName:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentProcessingInstruction:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
+    "xmlDocCommentText:csharp": {
+      "foreground": "#A69E93",
+      "italic": false
+    },
     "*.deprecated": {
       "strikethrough": true
     },

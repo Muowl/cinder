@@ -64,10 +64,15 @@ for (const { lang, line: context, needle, role, italic } of cases) {
 // modifier +100 each; each style property is resolved independently.
 // Source: microsoft/vscode tokenClassificationRegistry.ts and colorThemeData.ts.
 const ra = read('qa/rust-analyzer-tokens.json');
-const superTypes = new Map(ra.types.map(t => [t.id, t.superType]));
+const cs = read('qa/csharp-tokens.json');
+const providerTypes = new Map([
+  ['rust', new Map(ra.types.map(t => [t.id, t.superType]))],
+  ['csharp', new Map(cs.types.map(t => [t.id, t.superType]))],
+]);
 function semanticStyle(tokens, type, modifiers, language) {
   const hierarchy = [type];
-  if (language === 'rust') {
+  const superTypes = providerTypes.get(language);
+  if (superTypes) {
     while (superTypes.get(hierarchy.at(-1))) hierarchy.push(superTypes.get(hierarchy.at(-1)));
   }
   const style = {}, scores = {};
@@ -118,6 +123,13 @@ const semanticCases = [
   ['class', ['builtin'], 'python', 'syntax.type'],
   ['function', ['library'], 'python', 'syntax.function'],
   ['class', ['decorator'], 'typescript', 'syntax.type'],
+  // C# XML documentation has distinct token types, not comment.documentation.
+  ...cs.types.filter(t => t.id.startsWith('xmlDocComment'))
+    .map(t => [t.id, [], 'csharp', 'syntax.commentDoc', false]),
+  ['constant', ['static'], 'csharp', 'syntax.constant', true],
+  ['delegate', [], 'csharp', 'syntax.type'],
+  ['stringEscapeCharacter', [], 'csharp', 'syntax.stringEscape'],
+  ['comment', [], 'csharp', 'syntax.comment', true],
 ];
 const semanticResults = semanticCases.map(([type, modifiers, lang, role, italic]) => {
   function inspect(t) {

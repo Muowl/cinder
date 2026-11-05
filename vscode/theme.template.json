@@ -1203,6 +1203,49 @@
     "invalidEscapeSequence:rust": "{syntax.invalid}",
     "punctuation:rust": "{syntax.punctuation}",
     "operator:rust": "{syntax.operator}",
+    "constant:csharp": "{syntax.constant}",
+    "delegate:csharp": "{syntax.type}",
+    "stringEscapeCharacter:csharp": "{syntax.stringEscape}",
+    "xmlDocCommentAttributeName:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentAttributeQuotes:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentAttributeValue:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentCDataSection:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentComment:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentDelimiter:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentEntityReference:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentName:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentProcessingInstruction:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentText:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
     "*.deprecated": {
       "strikethrough": true
     },

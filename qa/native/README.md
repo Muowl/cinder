@@ -4,7 +4,8 @@ O driver local coleta os tokens semânticos emitidos pelas extensões do VS Code
 Ele não cria tokens simulados e não substitui a inspeção visual do editor.
 A revisão de 0.3.2 está em andamento, com tokens coletados pelo driver e
 capturas fornecidas pelo usuário. Os comentários Rust foram conferidos nos
-dois modos de realce; Python revelou uma lacuna nos decoradores do Pylance.
+dois modos de realce. As capturas de Python e C# confirmam as correções nos
+decoradores do Pylance e nos tipos semânticos específicos do servidor C#.
 O [relatório de linguagens](../LANGUAGE-REVIEW.md) registra o progresso e as
 verificações que ainda faltam.
 
