@@ -1,0 +1,350 @@
+{
+  "file": "sample.c",
+  "language": "c",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "3fbb05df97017e03993373cebecaa083475b9430218c450927d42e5d35cddce0",
+  "legend": {
+    "tokenTypes": [
+      "macro",
+      "enumMember",
+      "variable",
+      "parameter",
+      "type",
+      "referenceType",
+      "valueType",
+      "function",
+      "method",
+      "property",
+      "cliProperty",
+      "event",
+      "genericType",
+      "templateFunction",
+      "templateType",
+      "namespace",
+      "label",
+      "customLiteral",
+      "numberLiteral",
+      "stringLiteral",
+      "operatorOverload",
+      "memberOperatorOverload",
+      "newOperator"
+    ],
+    "tokenModifiers": [
+      "static",
+      "global",
+      "local"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 5,
+      "column": 9,
+      "text": "LIMIT",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 6,
+      "column": 9,
+      "text": "LABEL",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 17,
+      "text": "name",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "column": 5,
+      "text": "size_t",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "column": 12,
+      "text": "count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 3,
+      "text": "Queue",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 6,
+      "text": "Status",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 15,
+      "text": "READY",
+      "type": "enumMember",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 26,
+      "text": "FULL",
+      "type": "enumMember",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 15,
+      "text": "bool",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 20,
+      "text": "push",
+      "type": "function",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 25,
+      "text": "Queue",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 32,
+      "text": "queue",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "column": 43,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 11,
+      "text": "bool",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 16,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    },
+    {
+      "line": 17,
+      "column": 26,
+      "text": "true",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 18,
+      "column": 10,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 21,
+      "text": "queue",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 18,
+      "column": 30,
+      "text": "NULL",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 18,
+      "column": 38,
+      "text": "queue",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 18,
+      "column": 45,
+      "text": "count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 18,
+      "column": 54,
+      "text": "LIMIT",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 16,
+      "text": "false",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 5,
+      "text": "queue",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 12,
+      "text": "count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 5,
+      "text": "printf",
+      "type": "function",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 24,
+      "text": "queue",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 31,
+      "text": "name",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 22,
+      "column": 37,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 12,
+      "text": "true",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 5,
+      "text": "main",
+      "type": "function",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 5,
+      "text": "Queue",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 11,
+      "text": "queue",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 22,
+      "text": "name",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 29,
+      "text": "LABEL",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 37,
+      "text": "count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 12,
+      "text": "push",
+      "type": "function",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 18,
+      "text": "queue",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "ms-vscode.cpptools",
+      "version": "1.35.6"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": []
+}

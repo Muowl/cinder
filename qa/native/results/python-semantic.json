@@ -1,0 +1,697 @@
+{
+  "file": "sample.py",
+  "language": "python",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "59e359758bad1c60b486eb50c179ffe51599d51663acfc261acf2f6496f1d480",
+  "legend": {
+    "tokenTypes": [
+      "comment",
+      "keyword",
+      "operator",
+      "string",
+      "number",
+      "regexp",
+      "type",
+      "class",
+      "interface",
+      "enum",
+      "enumMember",
+      "typeParameter",
+      "function",
+      "method",
+      "property",
+      "variable",
+      "parameter",
+      "module",
+      "intrinsic",
+      "selfParameter",
+      "clsParameter",
+      "magicFunction",
+      "builtinConstant",
+      "parenthesis",
+      "curlybrace",
+      "bracket",
+      "colon",
+      "semicolon",
+      "arrow"
+    ],
+    "tokenModifiers": [
+      "declaration",
+      "static",
+      "abstract",
+      "async",
+      "documentation",
+      "typeHint",
+      "typeHintComment",
+      "readonly",
+      "decorator",
+      "builtin",
+      "overridden",
+      "callable",
+      "classMember",
+      "keywordArgument",
+      "dynamicAttribute",
+      "invalid",
+      "escapeCharacter",
+      "library"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 2,
+      "column": 6,
+      "text": "dataclasses",
+      "type": "module",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "column": 25,
+      "text": "dataclass",
+      "type": "function",
+      "modifiers": [
+        "library"
+      ]
+    },
+    {
+      "line": 2,
+      "column": 36,
+      "text": "field",
+      "type": "function",
+      "modifiers": [
+        "library"
+      ]
+    },
+    {
+      "line": 3,
+      "column": 6,
+      "text": "typing",
+      "type": "module",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "column": 20,
+      "text": "Generic",
+      "type": "class",
+      "modifiers": [
+        "library"
+      ]
+    },
+    {
+      "line": 3,
+      "column": 29,
+      "text": "TypeVar",
+      "type": "class",
+      "modifiers": [
+        "library"
+      ]
+    },
+    {
+      "line": 5,
+      "column": 1,
+      "text": "T",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 5,
+      "column": 5,
+      "text": "TypeVar",
+      "type": "class",
+      "modifiers": [
+        "library"
+      ]
+    },
+    {
+      "line": 6,
+      "column": 1,
+      "text": "LIMIT",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "readonly"
+      ]
+    },
+    {
+      "line": 6,
+      "column": 8,
+      "text": "int",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 2,
+      "text": "dataclass",
+      "type": "function",
+      "modifiers": [
+        "decorator",
+        "library"
+      ]
+    },
+    {
+      "line": 9,
+      "column": 7,
+      "text": "Queue",
+      "type": "class",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 9,
+      "column": 13,
+      "text": "Generic",
+      "type": "class",
+      "modifiers": [
+        "library"
+      ]
+    },
+    {
+      "line": 9,
+      "column": 21,
+      "text": "T",
+      "type": "variable",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 10,
+      "column": 5,
+      "text": "label",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "classMember"
+      ]
+    },
+    {
+      "line": 10,
+      "column": 12,
+      "text": "str",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 5,
+      "text": "items",
+      "type": "variable",
+      "modifiers": [
+        "declaration",
+        "classMember"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 12,
+      "text": "list",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 17,
+      "text": "T",
+      "type": "variable",
+      "modifiers": [
+        "typeHint",
+        "readonly"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 22,
+      "text": "field",
+      "type": "function",
+      "modifiers": [
+        "library"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 28,
+      "text": "default_factory",
+      "type": "parameter",
+      "modifiers": [
+        "keywordArgument"
+      ]
+    },
+    {
+      "line": 11,
+      "column": 44,
+      "text": "list",
+      "type": "class",
+      "modifiers": [
+        "builtin"
+      ]
+    },
+    {
+      "line": 13,
+      "column": 6,
+      "text": "property",
+      "type": "class",
+      "modifiers": [
+        "decorator",
+        "builtin"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 9,
+      "text": "count",
+      "type": "property",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 15,
+      "text": "self",
+      "type": "selfParameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 14,
+      "column": 24,
+      "text": "int",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 16,
+      "column": 16,
+      "text": "len",
+      "type": "function",
+      "modifiers": [
+        "builtin"
+      ]
+    },
+    {
+      "line": 16,
+      "column": 20,
+      "text": "self",
+      "type": "selfParameter",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 25,
+      "text": "items",
+      "type": "variable",
+      "modifiers": [
+        "classMember"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 15,
+      "text": "push",
+      "type": "method",
+      "modifiers": [
+        "declaration",
+        "async"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 20,
+      "text": "self",
+      "type": "selfParameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 26,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 33,
+      "text": "T",
+      "type": "variable",
+      "modifiers": [
+        "typeHint",
+        "readonly"
+      ]
+    },
+    {
+      "line": 18,
+      "column": 39,
+      "text": "bool",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 9,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 18,
+      "text": "bool",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 25,
+      "text": "True",
+      "type": "builtinConstant",
+      "modifiers": [
+        "readonly",
+        "builtin"
+      ]
+    },
+    {
+      "line": 21,
+      "column": 16,
+      "text": "enabled",
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 27,
+      "text": "self",
+      "type": "selfParameter",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 32,
+      "text": "count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "column": 41,
+      "text": "LIMIT",
+      "type": "variable",
+      "modifiers": [
+        "readonly"
+      ]
+    },
+    {
+      "line": 22,
+      "column": 20,
+      "text": "False",
+      "type": "builtinConstant",
+      "modifiers": [
+        "readonly",
+        "builtin"
+      ]
+    },
+    {
+      "line": 23,
+      "column": 9,
+      "text": "self",
+      "type": "selfParameter",
+      "modifiers": []
+    },
+    {
+      "line": 23,
+      "column": 14,
+      "text": "items",
+      "type": "variable",
+      "modifiers": [
+        "classMember"
+      ]
+    },
+    {
+      "line": 23,
+      "column": 20,
+      "text": "append",
+      "type": "method",
+      "modifiers": [
+        "builtin"
+      ]
+    },
+    {
+      "line": 23,
+      "column": 27,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 9,
+      "text": "print",
+      "type": "function",
+      "modifiers": [
+        "builtin"
+      ]
+    },
+    {
+      "line": 24,
+      "column": 18,
+      "text": "self",
+      "type": "selfParameter",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 23,
+      "text": "label",
+      "type": "variable",
+      "modifiers": [
+        "classMember"
+      ]
+    },
+    {
+      "line": 24,
+      "column": 32,
+      "text": "self",
+      "type": "selfParameter",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "column": 37,
+      "text": "count",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "column": 16,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "column": 29,
+      "text": "None",
+      "type": "builtinConstant",
+      "modifiers": [
+        "readonly",
+        "builtin"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 5,
+      "text": "names",
+      "type": "function",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 11,
+      "text": "entries",
+      "type": "parameter",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 20,
+      "text": "list",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 25,
+      "text": "Queue",
+      "type": "class",
+      "modifiers": [
+        "typeHint"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 31,
+      "text": "str",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 41,
+      "text": "list",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 27,
+      "column": 46,
+      "text": "str",
+      "type": "class",
+      "modifiers": [
+        "typeHint",
+        "builtin"
+      ]
+    },
+    {
+      "line": 28,
+      "column": 5,
+      "text": "pattern",
+      "type": "variable",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 29,
+      "column": 13,
+      "text": "entry",
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 19,
+      "text": "label",
+      "type": "variable",
+      "modifiers": [
+        "classMember"
+      ]
+    },
+    {
+      "line": 29,
+      "column": 29,
+      "text": "entry",
+      "type": "variable",
+      "modifiers": [
+        "declaration"
+      ]
+    },
+    {
+      "line": 29,
+      "column": 38,
+      "text": "entries",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 49,
+      "text": "entry",
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 55,
+      "text": "count",
+      "type": "property",
+      "modifiers": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "ms-python.debugpy",
+      "version": "2026.6.0"
+    },
+    {
+      "id": "ms-python.python",
+      "version": "2026.10.0"
+    },
+    {
+      "id": "ms-python.vscode-pylance",
+      "version": "2026.4.1"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": [
+    {
+      "line": 28,
+      "severity": 3,
+      "message": "\"pattern\" is not accessed"
+    }
+  ]
+}

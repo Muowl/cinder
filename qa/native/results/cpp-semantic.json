@@ -1,0 +1,384 @@
+{
+  "file": "sample.cpp",
+  "language": "cpp",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": true,
+  "sourceSha256": "23b63e1ccfc57a4c995c705b5816ded7e1e4bdd41aa5b3839a702832a92041e6",
+  "legend": {
+    "tokenTypes": [
+      "macro",
+      "enumMember",
+      "variable",
+      "parameter",
+      "type",
+      "referenceType",
+      "valueType",
+      "function",
+      "method",
+      "property",
+      "cliProperty",
+      "event",
+      "genericType",
+      "templateFunction",
+      "templateType",
+      "namespace",
+      "label",
+      "customLiteral",
+      "numberLiteral",
+      "stringLiteral",
+      "operatorOverload",
+      "memberOperatorOverload",
+      "newOperator"
+    ],
+    "tokenModifiers": [
+      "static",
+      "global",
+      "local"
+    ]
+  },
+  "tokens": [
+    {
+      "line": 6,
+      "column": 9,
+      "text": "CINDER_LOG",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 6,
+      "column": 27,
+      "text": "std",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 6,
+      "column": 32,
+      "text": "cout",
+      "type": "variable",
+      "modifiers": [
+        "global"
+      ]
+    },
+    {
+      "line": 8,
+      "column": 11,
+      "text": "cinder",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 12,
+      "text": "Status",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 21,
+      "text": "Ready",
+      "type": "enumMember",
+      "modifiers": []
+    },
+    {
+      "line": 9,
+      "column": 28,
+      "text": "Full",
+      "type": "enumMember",
+      "modifiers": []
+    },
+    {
+      "line": 11,
+      "column": 20,
+      "text": "T",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 10,
+      "text": "std",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 15,
+      "text": "integral",
+      "type": "templateType",
+      "modifiers": []
+    },
+    {
+      "line": 12,
+      "column": 24,
+      "text": "T",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "column": 7,
+      "text": "Queue",
+      "type": "templateType",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 5,
+      "text": "std",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 10,
+      "text": "vector",
+      "type": "templateType",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 17,
+      "text": "T",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "column": 20,
+      "text": "items_",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 22,
+      "text": "std",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 27,
+      "text": "size_t",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "column": 34,
+      "text": "limit",
+      "type": "property",
+      "modifiers": [
+        "static"
+      ]
+    },
+    {
+      "line": 17,
+      "column": 24,
+      "text": "push",
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 35,
+      "text": "T",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "column": 38,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 13,
+      "text": "items_",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 20,
+      "text": "size",
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "column": 30,
+      "text": "limit",
+      "type": "property",
+      "modifiers": [
+        "static"
+      ]
+    },
+    {
+      "line": 20,
+      "column": 9,
+      "text": "items_",
+      "type": "property",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 16,
+      "text": "push_back",
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "column": 26,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 26,
+      "column": 5,
+      "text": "main",
+      "type": "function",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 5,
+      "text": "cinder",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 13,
+      "text": "Queue",
+      "type": "templateType",
+      "modifiers": []
+    },
+    {
+      "line": 27,
+      "column": 24,
+      "text": "queue",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    },
+    {
+      "line": 28,
+      "column": 10,
+      "text": "scale",
+      "type": "function",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 25,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 28,
+      "column": 48,
+      "text": "value",
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 11,
+      "text": "std",
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 16,
+      "text": "string_view",
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 29,
+      "column": 28,
+      "text": "label",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    },
+    {
+      "line": 30,
+      "column": 5,
+      "text": "CINDER_LOG",
+      "type": "macro",
+      "modifiers": []
+    },
+    {
+      "line": 30,
+      "column": 16,
+      "text": "label",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    },
+    {
+      "line": 31,
+      "column": 12,
+      "text": "queue",
+      "type": "variable",
+      "modifiers": [
+        "local"
+      ]
+    },
+    {
+      "line": 31,
+      "column": 18,
+      "text": "push",
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 31,
+      "column": 23,
+      "text": "scale",
+      "type": "function",
+      "modifiers": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "ms-vscode.cpptools",
+      "version": "1.35.6"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": []
+}

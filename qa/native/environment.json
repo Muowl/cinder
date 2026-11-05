@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-04",
+  "timezone": "America/Sao_Paulo",
+  "platform": "Windows x64",
+  "vscodeVersion": "1.144.1",
+  "fontFamily": "DejaVu Sans Mono",
+  "fontSize": 15,
+  "semanticHighlighting": true,
+  "cStandard": "c17",
+  "cppStandard": "c++20",
+  "extensions": [
+    {
+      "id": "ms-python.debugpy",
+      "version": "2026.6.0"
+    },
+    {
+      "id": "ms-python.python",
+      "version": "2026.10.0"
+    },
+    {
+      "id": "ms-python.vscode-pylance",
+      "version": "2026.4.1"
+    },
+    {
+      "id": "ms-vscode.cpptools",
+      "version": "1.35.6"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "muowl.cinder-warm-theme",
+      "version": "0.3.2"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    }
+  ],
+  "jsxTypeDependencies": {
+    "@types/react": "19.3.0",
+    "csstype": "3.2.3"
+  },
+  "notes": [
+    "Separate QA profile; screenshots supplied by the user.",
+    "C and C++ semantic highlighting was refreshed after collecting provider tokens.",
+    "Token collection alone does not certify the displayed style."
+  ]
+}

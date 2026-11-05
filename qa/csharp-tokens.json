@@ -1,0 +1,62 @@
+{
+  "source": "Installed ms-dotnettools.csharp extension package.json",
+  "version": "2.160.4",
+  "packageJsonSha256": "e97501a321007f6588283cc73aa08cbec49d097980292ddefe5010586f922a95",
+  "types": [
+    {
+      "id": "stringEscapeCharacter",
+      "superType": "string",
+      "description": "An escape character within a string."
+    },
+    {
+      "id": "delegate",
+      "superType": "method",
+      "description": "A definition or reference to a delegate type."
+    },
+    {
+      "id": "constant",
+      "superType": "variable",
+      "description": "A definition or reference to a constant."
+    },
+    {
+      "id": "xmlDocCommentAttributeName",
+      "description": "A token that represents an attribute in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentAttributeQuotes",
+      "description": "A token that represents an attribute quote in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentAttributeValue",
+      "description": "A token that represents an attribute value in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentCDataSection",
+      "description": "A token that represents a CDATA section in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentComment",
+      "description": "A token that represents a comment in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentDelimiter",
+      "description": "A token that represents a delimeter in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentEntityReference",
+      "description": "A token that represents reference to an entity in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentName",
+      "description": "A token that represents a name in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentProcessingInstruction",
+      "description": "A token that represents a processing instruction in an XML documentation comment"
+    },
+    {
+      "id": "xmlDocCommentText",
+      "description": "A token that represents text in an XML documentation comment"
+    }
+  ]
+}

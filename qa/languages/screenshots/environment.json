@@ -1,0 +1,21 @@
+{
+  "platform": "win32",
+  "browser": "151.0.7922.34",
+  "fonts": [
+    {
+      "family": "DejaVu Sans Mono",
+      "postScriptName": "DejaVuSansMono"
+    },
+    {
+      "family": "DejaVu Sans Mono",
+      "postScriptName": "DejaVuSansMono-Oblique"
+    }
+  ],
+  "captures": 27,
+  "sizes": [
+    15,
+    13,
+    18
+  ],
+  "deviceScaleFactor": 1
+}

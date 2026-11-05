@@ -1,0 +1,9 @@
+{
+  "name": "cinder-native-qa",
+  "displayName": "Cinder native QA",
+  "publisher": "cinder-local",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.80.0" },
+  "main": "extension.cjs",
+  "activationEvents": ["onStartupFinished"]
+}

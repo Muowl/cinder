@@ -448,7 +448,11 @@
       "name": "Doc comments — upright (API surface, not asides)",
       "scope": [
         "comment.block.documentation",
-        "comment.block.documentation punctuation"
+        "comment.block.documentation punctuation.definition.comment",
+        "comment.line.double-slash.documentation",
+        "comment.line.double-slash.documentation punctuation.definition.comment",
+        "comment.line.documentation",
+        "comment.line.documentation punctuation.definition.comment"
       ],
       "settings": {
         "foreground": "{syntax.commentDoc}",
@@ -540,6 +544,12 @@
         "entity.name.function.decorator",
         "meta.decorator entity.name.function",
         "meta.decorator punctuation.decorator",
+        "meta.function.decorator.python support.type.python",
+        "punctuation.definition.decorator.python",
+        "entity.name.function.macro.rust",
+        "entity.name.function.preprocessor",
+        "meta.attribute.rust",
+        "support.other.attribute.cpp entity.other.attribute",
         "storage.type.annotation",
         "punctuation.definition.annotation",
         "meta.annotation.identifier"
@@ -559,6 +569,11 @@
         "support.type",
         "entity.name.type.enum",
         "storage.type.primitive",
+        "storage.type.built-in.c",
+        "storage.type.built-in.cpp",
+        "storage.type.built-in.primitive.c",
+        "storage.type.built-in.primitive.cpp",
+        "storage.type.return-type.lambda.cpp",
         "keyword.type"
       ],
       "settings": {
@@ -607,6 +622,7 @@
       "name": "Parameters — Parchment italic",
       "scope": [
         "variable.parameter",
+        "entity.name.variable.parameter.cs",
         "meta.function.parameters variable"
       ],
       "settings": {
@@ -625,6 +641,7 @@
         "constant.language.undefined",
         "variable.other.constant",
         "variable.other.enummember",
+        "entity.name.variable.enum-member.cs",
         "support.constant",
         "keyword.other.unit"
       ],
@@ -651,6 +668,10 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         "punctuation.section.embedded",
+        "punctuation.definition.interpolation.begin.cs",
+        "punctuation.definition.interpolation.end.cs",
+        "constant.character.format.placeholder.other.python",
+        "storage.type.format.python",
         "constant.other.placeholder"
       ],
       "settings": {
@@ -1098,6 +1119,16 @@
         "foreground": "{syntax.commentTodo}",
         "fontStyle": "bold"
       }
+    },
+    {
+      "name": "Python call targets — Antique Gold",
+      "scope": ["meta.function-call.generic.python"],
+      "settings": { "foreground": "{syntax.function}" }
+    },
+    {
+      "name": "Rust lifetimes — Steel italic",
+      "scope": ["entity.name.type.lifetime.rust", "storage.modifier.lifetime.rust"],
+      "settings": { "foreground": "{syntax.type}", "fontStyle": "italic" }
     }
   ],
   "semanticTokenColors": {
@@ -1122,7 +1153,14 @@
       "foreground": "{syntax.decorator}",
       "italic": true
     },
-    "macro": "{syntax.decorator}",
+    "*.decorator:python": {
+      "foreground": "{syntax.decorator}",
+      "italic": true
+    },
+    "macro": {
+      "foreground": "{syntax.decorator}",
+      "italic": true
+    },
     "variable": "{syntax.variable}",
     "variable.readonly": "{syntax.constant}",
     "parameter": {
@@ -1143,6 +1181,70 @@
     "comment": {
       "foreground": "{syntax.comment}",
       "italic": true
+    },
+    "comment.documentation": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "boolean:rust": "{syntax.boolean}",
+    "selfTypeKeyword:rust": "{syntax.type}",
+    "attribute:rust": {
+      "foreground": "{syntax.decorator}",
+      "italic": true
+    },
+    "lifetime:rust": {
+      "foreground": "{syntax.type}",
+      "italic": true
+    },
+    "constParameter:rust": "{syntax.constant}",
+    "const:rust": "{syntax.constant}",
+    "escapeSequence:rust": "{syntax.stringEscape}",
+    "formatSpecifier:rust": "{syntax.stringEscape}",
+    "invalidEscapeSequence:rust": "{syntax.invalid}",
+    "punctuation:rust": "{syntax.punctuation}",
+    "operator:rust": "{syntax.operator}",
+    "constant:csharp": "{syntax.constant}",
+    "delegate:csharp": "{syntax.type}",
+    "stringEscapeCharacter:csharp": "{syntax.stringEscape}",
+    "xmlDocCommentAttributeName:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentAttributeQuotes:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentAttributeValue:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentCDataSection:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentComment:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentDelimiter:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentEntityReference:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentName:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentProcessingInstruction:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
+    },
+    "xmlDocCommentText:csharp": {
+      "foreground": "{syntax.commentDoc}",
+      "italic": false
     },
     "*.deprecated": {
       "strikethrough": true

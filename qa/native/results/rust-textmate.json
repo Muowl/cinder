@@ -1,0 +1,31 @@
+{
+  "file": "sample.rs",
+  "language": "rust",
+  "vscode": "1.144.1",
+  "theme": "Cinder",
+  "semanticHighlighting": false,
+  "sourceSha256": "e67281be1b751399395fc858df7a2815eeafec56331dfe566fd9aed93a51a1e4",
+  "extensions": [
+    {
+      "id": "TypeScriptTeam.jsts-chat-features",
+      "version": "0.0.6"
+    },
+    {
+      "id": "ms-dotnettools.csharp",
+      "version": "2.160.4"
+    },
+    {
+      "id": "ms-dotnettools.vscode-dotnet-runtime",
+      "version": "3.2.0"
+    },
+    {
+      "id": "rust-lang.rust-analyzer",
+      "version": "0.3.3105"
+    },
+    {
+      "id": "cinder-local.cinder-native-qa",
+      "version": "0.0.1"
+    }
+  ],
+  "diagnostics": []
+}

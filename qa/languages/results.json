@@ -1,0 +1,5064 @@
+{
+  "baselineRef": "2241d180fe5067b90710e34b2d1cc3f9c69bafec",
+  "shikiVersion": "4.5.0",
+  "semanticMethod": "Theme selector model; no live language servers",
+  "textmate": [
+    {
+      "lang": "rust",
+      "line": 5,
+      "needle": "struct",
+      "role": "syntax.keyword",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > keyword.declaration.struct.rust > storage.type.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > keyword.declaration.struct.rust > storage.type.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 5,
+      "needle": "Queue",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > entity.name.type.struct.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > entity.name.type.struct.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 15,
+      "needle": "/// Creates an empty queue",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.rust > comment.line.documentation.rust > punctuation.definition.comment.rust",
+          "source.rust > comment.line.documentation.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > comment.line.documentation.rust > punctuation.definition.comment.rust",
+          "source.rust > comment.line.documentation.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 4,
+      "needle": "derive",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > meta.attribute.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.rust > meta.attribute.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 5,
+      "needle": "a",
+      "role": "syntax.type",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > entity.name.type.lifetime.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.rust > entity.name.type.lifetime.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 22,
+      "needle": "usize",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > entity.name.type.numeric.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > entity.name.type.numeric.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 22,
+      "needle": "LIMIT",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > constant.other.caps.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > constant.other.caps.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 23,
+      "needle": "true",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > constant.language.bool.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > constant.language.bool.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 20,
+      "needle": "push",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > meta.function.definition.rust > entity.name.function.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > meta.function.definition.rust > entity.name.function.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 25,
+      "needle": "items",
+      "role": "syntax.property",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 26,
+      "needle": "println!",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > meta.macro.rust > entity.name.function.macro.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.rust > meta.macro.rust > entity.name.function.macro.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 29,
+      "needle": "queue full",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > string.quoted.double.rust > punctuation.definition.string.rust",
+          "source.rust > string.quoted.double.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > string.quoted.double.rust > punctuation.definition.string.rust",
+          "source.rust > string.quoted.double.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 21,
+      "needle": "TODO",
+      "role": "syntax.comment",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.rust > comment.line.double-slash.rust > punctuation.definition.comment.rust",
+          "source.rust > comment.line.double-slash.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.rust > comment.line.double-slash.rust > punctuation.definition.comment.rust",
+          "source.rust > comment.line.double-slash.rust"
+        ]
+      }
+    },
+    {
+      "lang": "rust",
+      "line": 26,
+      "needle": "\\n",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > string.quoted.double.rust > constant.character.escape.rust > constant.character.escape.backslash.rust",
+          "source.rust > string.quoted.double.rust > constant.character.escape.rust"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.rust > string.quoted.double.rust > constant.character.escape.rust > constant.character.escape.backslash.rust",
+          "source.rust > string.quoted.double.rust > constant.character.escape.rust"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 2,
+      "needle": "include",
+      "role": "syntax.keyword",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.preprocessor.include.c > keyword.control.directive.include.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.preprocessor.include.c > keyword.control.directive.include.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 2,
+      "needle": "<stdbool.h>",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.preprocessor.include.c > string.quoted.other.lt-gt.include.c > punctuation.definition.string.begin.c",
+          "source.c > meta.preprocessor.include.c > string.quoted.other.lt-gt.include.c",
+          "source.c > meta.preprocessor.include.c > string.quoted.other.lt-gt.include.c > punctuation.definition.string.end.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.preprocessor.include.c > string.quoted.other.lt-gt.include.c > punctuation.definition.string.begin.c",
+          "source.c > meta.preprocessor.include.c > string.quoted.other.lt-gt.include.c",
+          "source.c > meta.preprocessor.include.c > string.quoted.other.lt-gt.include.c > punctuation.definition.string.end.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 5,
+      "needle": "LIMIT",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.preprocessor.macro.c > entity.name.function.preprocessor.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.c > meta.preprocessor.macro.c > entity.name.function.preprocessor.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 9,
+      "needle": "char",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > storage.type.built-in.primitive.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > storage.type.built-in.primitive.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 10,
+      "needle": "size_t",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > storage.type.built-in.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > storage.type.built-in.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 15,
+      "needle": "bool",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > storage.type.built-in.primitive.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > storage.type.built-in.primitive.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 15,
+      "needle": "push",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.function.c > meta.function.definition.parameters.c > entity.name.function.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.function.c > meta.function.definition.parameters.c > entity.name.function.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 15,
+      "needle": "value",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.c > meta.function.c > meta.function.definition.parameters.c > variable.parameter.probably.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.c > meta.function.c > meta.function.definition.parameters.c > variable.parameter.probably.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 17,
+      "needle": "true",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > constant.language.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > constant.language.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 19,
+      "needle": "false",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > constant.language.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > constant.language.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 22,
+      "needle": "printf",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > meta.function-call.c > entity.name.function.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > meta.function-call.c > entity.name.function.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 22,
+      "needle": "%s",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > meta.function-call.c > string.quoted.double.c > constant.other.placeholder.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > meta.block.c > meta.function-call.c > string.quoted.double.c > constant.other.placeholder.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 1,
+      "needle": "/**",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.c > comment.block.documentation.c > punctuation.definition.comment.begin.documentation.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > comment.block.documentation.c > punctuation.definition.comment.begin.documentation.c",
+          "source.c > comment.block.documentation.c",
+          "source.c > comment.block.documentation.c > punctuation.definition.comment.end.documentation.c"
+        ]
+      }
+    },
+    {
+      "lang": "c",
+      "line": 1,
+      "needle": "*/",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.c > comment.block.documentation.c > punctuation.definition.comment.end.documentation.c"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.c > comment.block.documentation.c > punctuation.definition.comment.begin.documentation.c",
+          "source.c > comment.block.documentation.c",
+          "source.c > comment.block.documentation.c > punctuation.definition.comment.end.documentation.c"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 1,
+      "needle": "///",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.cpp > comment.line.double-slash.documentation.cpp > punctuation.definition.comment.documentation.cpp",
+          "source.cpp > comment.line.double-slash.documentation.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > comment.line.double-slash.documentation.cpp > punctuation.definition.comment.documentation.cpp",
+          "source.cpp > comment.line.double-slash.documentation.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 1,
+      "needle": "Generic queue",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.cpp > comment.line.double-slash.documentation.cpp > punctuation.definition.comment.documentation.cpp",
+          "source.cpp > comment.line.double-slash.documentation.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > comment.line.double-slash.documentation.cpp > punctuation.definition.comment.documentation.cpp",
+          "source.cpp > comment.line.double-slash.documentation.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 13,
+      "needle": "Queue",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > entity.name.type.class.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > entity.name.type.class.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 16,
+      "needle": "size_t",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > storage.type.cpp > storage.type.built-in.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > storage.type.cpp > storage.type.built-in.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 17,
+      "needle": "nodiscard",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > support.other.attribute.cpp > entity.other.attribute.nodiscard.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > support.other.attribute.cpp > entity.other.attribute.nodiscard.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 17,
+      "needle": "bool",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.qualified-type.cpp > storage.type.primitive.cpp > storage.type.built-in.primitive.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.qualified-type.cpp > storage.type.primitive.cpp > storage.type.built-in.primitive.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 17,
+      "needle": "push",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.head.function.definition.cpp > entity.name.function.definition.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.head.function.definition.cpp > entity.name.function.definition.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 17,
+      "needle": "value",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.head.function.definition.cpp > meta.function.definition.parameters > meta.parameter.cpp > variable.parameter.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.head.function.definition.cpp > meta.function.definition.parameters > meta.parameter.cpp > variable.parameter.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 27,
+      "needle": "int",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.declaration.cpp > meta.qualified-type.cpp > meta.template.call.cpp > storage.type.primitive.cpp > storage.type.built-in.primitive.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.declaration.cpp > meta.qualified-type.cpp > meta.template.call.cpp > storage.type.primitive.cpp > storage.type.built-in.primitive.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 21,
+      "needle": "true",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > constant.language.true.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.block.namespace.cpp > meta.body.namespace.cpp > meta.block.class.cpp > meta.body.class.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > constant.language.true.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 30,
+      "needle": "CINDER_LOG",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > entity.name.function.call.upper-case.cpp > entity.name.function.call.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > entity.name.function.call.upper-case.cpp > entity.name.function.call.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 29,
+      "needle": "string_view",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > meta.qualified-type.cpp > entity.name.type.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > meta.qualified-type.cpp > entity.name.type.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "cpp",
+      "line": 29,
+      "needle": "Cinder queue",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp > punctuation.definition.string.begin.cpp > meta.encoding.cpp",
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp > punctuation.definition.string.begin.cpp",
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp",
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp > punctuation.definition.string.end.cpp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp > punctuation.definition.string.begin.cpp > meta.encoding.cpp",
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp > punctuation.definition.string.begin.cpp",
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp",
+          "source.cpp > meta.function.definition.cpp > meta.body.function.definition.cpp > meta.assignment.cpp > string.quoted.double.raw.cpp > punctuation.definition.string.end.cpp"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 5,
+      "needle": "Cinder",
+      "role": "syntax.namespace",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.type.namespace.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.type.namespace.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 9,
+      "needle": "Queue",
+      "role": "syntax.class",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.type.class.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.type.class.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 12,
+      "needle": "int",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > keyword.type.int.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > keyword.type.int.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 16,
+      "needle": "PushAsync",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.function.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.function.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 16,
+      "needle": "value",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs",
+          "source.cs > entity.name.variable.parameter.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.cs > entity.name.variable.parameter.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 29,
+      "needle": "Ready",
+      "role": "syntax.constant",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs",
+          "source.cs > entity.name.variable.enum-member.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.variable.enum-member.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 29,
+      "needle": "Full",
+      "role": "syntax.constant",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs",
+          "source.cs > entity.name.variable.enum-member.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.variable.enum-member.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 7,
+      "needle": "///",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.cs > comment.block.documentation.cs > punctuation.definition.comment.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > comment.block.documentation.cs > punctuation.definition.comment.cs",
+          "source.cs > comment.block.documentation.cs",
+          "source.cs > comment.block.documentation.cs > meta.tag.cs > punctuation.definition.tag.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 24,
+      "needle": "null",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > constant.language.null.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > constant.language.null.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 23,
+      "needle": "WriteLine",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.function.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > entity.name.function.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 23,
+      "needle": "{",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > string.quoted.double.cs > meta.embedded.interpolation.cs > punctuation.definition.interpolation.begin.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > string.quoted.double.cs > meta.embedded.interpolation.cs > punctuation.definition.interpolation.begin.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 23,
+      "needle": "}",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > string.quoted.double.cs > meta.embedded.interpolation.cs > punctuation.definition.interpolation.end.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > string.quoted.double.cs > meta.embedded.interpolation.cs > punctuation.definition.interpolation.end.cs"
+        ]
+      }
+    },
+    {
+      "lang": "csharp",
+      "line": 23,
+      "needle": "\\n",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > string.quoted.double.cs > constant.character.escape.cs"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.cs > string.quoted.double.cs > constant.character.escape.cs"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 8,
+      "needle": "dataclass",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.python > meta.function.decorator.python > entity.name.function.decorator.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.python > meta.function.decorator.python > entity.name.function.decorator.python > punctuation.definition.decorator.python",
+          "source.python > meta.function.decorator.python > entity.name.function.decorator.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 13,
+      "needle": "property",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function.decorator.python > support.type.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.python > meta.function.decorator.python > entity.name.function.decorator.python > punctuation.definition.decorator.python",
+          "source.python > meta.function.decorator.python > support.type.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 13,
+      "needle": "@",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "colors": [
+          "#A69E93"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.python > meta.function.decorator.python > entity.name.function.decorator.python > punctuation.definition.decorator.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.python > meta.function.decorator.python > entity.name.function.decorator.python > punctuation.definition.decorator.python",
+          "source.python > meta.function.decorator.python > support.type.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 9,
+      "needle": "Queue",
+      "role": "syntax.class",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.class.python > entity.name.type.class.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.class.python > entity.name.type.class.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 18,
+      "needle": "push",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function.python > entity.name.function.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function.python > entity.name.function.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 18,
+      "needle": "value",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.python > meta.function.python > meta.function.parameters.python > variable.parameter.function.language.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.python > meta.function.python > meta.function.parameters.python > variable.parameter.function.language.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 20,
+      "needle": "bool",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > support.type.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > support.type.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 20,
+      "needle": "True",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > constant.language.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > constant.language.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 22,
+      "needle": "False",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > constant.language.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > constant.language.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 23,
+      "needle": "append",
+      "role": "syntax.function",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.member.access.python > meta.function-call.python > meta.function-call.generic.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.member.access.python > meta.function-call.python > meta.function-call.generic.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 5,
+      "needle": "TypeVar",
+      "role": "syntax.function",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python",
+          "source.python > meta.function-call.python > meta.function-call.generic.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.generic.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 11,
+      "needle": "field",
+      "role": "syntax.function",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python",
+          "source.python > meta.function-call.python > meta.function-call.generic.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.generic.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 24,
+      "needle": "{",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > constant.character.format.placeholder.other.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > constant.character.format.placeholder.other.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 24,
+      "needle": ":02d",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > storage.type.format.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > storage.type.format.python",
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > constant.character.format.placeholder.other.python",
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > constant.character.escape.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 24,
+      "needle": "\\n",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > constant.character.escape.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > storage.type.format.python",
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > constant.character.format.placeholder.other.python",
+          "source.python > meta.function-call.python > meta.function-call.arguments.python > meta.fstring.python > constant.character.escape.python"
+        ]
+      }
+    },
+    {
+      "lang": "python",
+      "line": 19,
+      "needle": "TODO",
+      "role": "syntax.commentTodo",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          2
+        ],
+        "scopes": [
+          "source.python > comment.line.number-sign.python > keyword.codetag.notation.python"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          2
+        ],
+        "scopes": [
+          "source.python > comment.line.number-sign.python > keyword.codetag.notation.python"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 11,
+      "needle": "Queue",
+      "role": "syntax.class",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > entity.name.type.class.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > entity.name.type.class.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 15,
+      "needle": "push",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.definition.method.ts > entity.name.function.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.definition.method.ts > entity.name.function.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 15,
+      "needle": "value",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.parameters.ts > variable.parameter.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.parameters.ts > variable.parameter.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 9,
+      "needle": "LIMIT",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > meta.var-single-variable.expr.ts > meta.definition.variable.ts > variable.other.constant.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > meta.var-single-variable.expr.ts > meta.definition.variable.ts > variable.other.constant.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 17,
+      "needle": "true",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > meta.var.expr.ts > constant.language.boolean.true.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > meta.var.expr.ts > constant.language.boolean.true.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 18,
+      "needle": "null",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > constant.language.null.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > constant.language.null.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 20,
+      "needle": "trim",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > meta.var.expr.ts > meta.function-call.ts > entity.name.function.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > meta.var.expr.ts > meta.function-call.ts > entity.name.function.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 21,
+      "needle": "log",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > meta.function-call.ts > entity.name.function.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > meta.function-call.ts > entity.name.function.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 21,
+      "needle": "${",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > string.template.ts > meta.template.expression.ts > punctuation.definition.template-expression.begin.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.class.ts > meta.method.declaration.ts > meta.block.ts > string.template.ts > meta.template.expression.ts > punctuation.definition.template-expression.begin.ts"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 26,
+      "needle": "^",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > string.regexp.ts > keyword.control.anchor.regexp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > string.regexp.ts > keyword.control.anchor.regexp"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 26,
+      "needle": "\\d",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > string.regexp.ts > constant.other.character-class.regexp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > string.regexp.ts > constant.other.character-class.regexp"
+        ]
+      }
+    },
+    {
+      "lang": "typescript",
+      "line": 28,
+      "needle": "map",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > meta.function-call.ts > entity.name.function.ts"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.ts > meta.var.expr.ts > meta.function-call.ts > entity.name.function.ts"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 4,
+      "needle": "Queue",
+      "role": "syntax.class",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > entity.name.type.class.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#92A9C2"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > entity.name.type.class.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 11,
+      "needle": "push",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.definition.method.js > entity.name.function.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.definition.method.js > entity.name.function.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 11,
+      "needle": "value",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.parameters.js > variable.parameter.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EAE4DB"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.parameters.js > variable.parameter.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 2,
+      "needle": "LIMIT",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > meta.var-single-variable.expr.js > meta.definition.variable.js > variable.other.constant.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > meta.var-single-variable.expr.js > meta.definition.variable.js > variable.other.constant.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 13,
+      "needle": "true",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > meta.var.expr.js > constant.language.boolean.true.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > meta.var.expr.js > constant.language.boolean.true.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 14,
+      "needle": "null",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > constant.language.null.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > constant.language.null.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 16,
+      "needle": "trim",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > meta.var.expr.js > meta.function-call.js > entity.name.function.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > meta.var.expr.js > meta.function-call.js > entity.name.function.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 17,
+      "needle": "log",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > meta.function-call.js > entity.name.function.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > meta.function-call.js > entity.name.function.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 17,
+      "needle": "${",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > string.template.js > meta.template.expression.js > punctuation.definition.template-expression.begin.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.class.js > meta.method.declaration.js > meta.block.js > string.template.js > meta.template.expression.js > punctuation.definition.template-expression.begin.js"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 24,
+      "needle": "^",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > string.regexp.js > keyword.control.anchor.regexp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#F3B69C"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > string.regexp.js > keyword.control.anchor.regexp"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 24,
+      "needle": "\\d",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > string.regexp.js > constant.other.character-class.regexp"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > string.regexp.js > constant.other.character-class.regexp"
+        ]
+      }
+    },
+    {
+      "lang": "javascript",
+      "line": 26,
+      "needle": "map",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > meta.function-call.js > entity.name.function.js"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js > meta.var.expr.js > meta.function-call.js > entity.name.function.js"
+        ]
+      }
+    },
+    {
+      "lang": "tsx",
+      "line": 10,
+      "needle": "QueueCard",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.definition.function.tsx > entity.name.function.tsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.definition.function.tsx > entity.name.function.tsx"
+        ]
+      }
+    },
+    {
+      "lang": "tsx",
+      "line": 13,
+      "needle": "section",
+      "role": "syntax.keyword",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > entity.name.tag.tsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > entity.name.tag.tsx"
+        ]
+      }
+    },
+    {
+      "lang": "tsx",
+      "line": 13,
+      "needle": "className",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > entity.other.attribute-name.tsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > entity.other.attribute-name.tsx"
+        ]
+      }
+    },
+    {
+      "lang": "tsx",
+      "line": 13,
+      "needle": "queue",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > string.quoted.double.tsx > punctuation.definition.string.begin.tsx",
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > string.quoted.double.tsx",
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > string.quoted.double.tsx > punctuation.definition.string.end.tsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > string.quoted.double.tsx > punctuation.definition.string.begin.tsx",
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > string.quoted.double.tsx",
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.tag.attributes.tsx > string.quoted.double.tsx > punctuation.definition.string.end.tsx"
+        ]
+      }
+    },
+    {
+      "lang": "tsx",
+      "line": 16,
+      "needle": "null",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.jsx.children.tsx > meta.embedded.expression.tsx > constant.language.null.tsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.tag.tsx > meta.jsx.children.tsx > meta.embedded.expression.tsx > constant.language.null.tsx"
+        ]
+      }
+    },
+    {
+      "lang": "tsx",
+      "line": 11,
+      "needle": "32",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.var.expr.tsx > constant.numeric.decimal.tsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.tsx > meta.function.tsx > meta.block.tsx > meta.var.expr.tsx > constant.numeric.decimal.tsx"
+        ]
+      }
+    },
+    {
+      "lang": "jsx",
+      "line": 2,
+      "needle": "QueueCard",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.definition.function.js.jsx > entity.name.function.js.jsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#DFBC59"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.definition.function.js.jsx > entity.name.function.js.jsx"
+        ]
+      }
+    },
+    {
+      "lang": "jsx",
+      "line": 5,
+      "needle": "section",
+      "role": "syntax.keyword",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > entity.name.tag.js.jsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#EC8F68"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > entity.name.tag.js.jsx"
+        ]
+      }
+    },
+    {
+      "lang": "jsx",
+      "line": 5,
+      "needle": "className",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > entity.other.attribute-name.js.jsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#CBA32D"
+        ],
+        "fontStyles": [
+          1
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > entity.other.attribute-name.js.jsx"
+        ]
+      }
+    },
+    {
+      "lang": "jsx",
+      "line": 5,
+      "needle": "queue",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > string.quoted.double.js.jsx > punctuation.definition.string.begin.js.jsx",
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > string.quoted.double.js.jsx",
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > string.quoted.double.js.jsx > punctuation.definition.string.end.js.jsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#7DB5A0"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > string.quoted.double.js.jsx > punctuation.definition.string.begin.js.jsx",
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > string.quoted.double.js.jsx",
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.tag.attributes.js.jsx > string.quoted.double.js.jsx > punctuation.definition.string.end.js.jsx"
+        ]
+      }
+    },
+    {
+      "lang": "jsx",
+      "line": 8,
+      "needle": "null",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.jsx.children.js.jsx > meta.embedded.expression.js.jsx > constant.language.null.js.jsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.tag.js.jsx > meta.jsx.children.js.jsx > meta.embedded.expression.js.jsx > constant.language.null.js.jsx"
+        ]
+      }
+    },
+    {
+      "lang": "jsx",
+      "line": 3,
+      "needle": "32",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.var.expr.js.jsx > constant.numeric.decimal.js.jsx"
+        ]
+      },
+      "after": {
+        "pass": true,
+        "colors": [
+          "#BE97B8"
+        ],
+        "fontStyles": [
+          0
+        ],
+        "scopes": [
+          "source.js.jsx > meta.function.js.jsx > meta.block.js.jsx > meta.var.expr.js.jsx > constant.numeric.decimal.js.jsx"
+        ]
+      }
+    }
+  ],
+  "semantic": [
+    {
+      "type": "type",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "variable",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.variable",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      }
+    },
+    {
+      "type": "parameter",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "enumMember",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ],
+      "lang": "rust",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "method",
+      "modifiers": [
+        "static",
+        "deprecated"
+      ],
+      "lang": "rust",
+      "role": "syntax.method",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "type",
+      "modifiers": [],
+      "lang": "c",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [],
+      "lang": "c",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "variable",
+      "modifiers": [],
+      "lang": "c",
+      "role": "syntax.variable",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      }
+    },
+    {
+      "type": "parameter",
+      "modifiers": [],
+      "lang": "c",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "enumMember",
+      "modifiers": [],
+      "lang": "c",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "modifiers": [],
+      "lang": "c",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ],
+      "lang": "c",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "method",
+      "modifiers": [
+        "static",
+        "deprecated"
+      ],
+      "lang": "c",
+      "role": "syntax.method",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "type",
+      "modifiers": [],
+      "lang": "cpp",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [],
+      "lang": "cpp",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "variable",
+      "modifiers": [],
+      "lang": "cpp",
+      "role": "syntax.variable",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      }
+    },
+    {
+      "type": "parameter",
+      "modifiers": [],
+      "lang": "cpp",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "enumMember",
+      "modifiers": [],
+      "lang": "cpp",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "modifiers": [],
+      "lang": "cpp",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ],
+      "lang": "cpp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "method",
+      "modifiers": [
+        "static",
+        "deprecated"
+      ],
+      "lang": "cpp",
+      "role": "syntax.method",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "type",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "variable",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.variable",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      }
+    },
+    {
+      "type": "parameter",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "enumMember",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "method",
+      "modifiers": [
+        "static",
+        "deprecated"
+      ],
+      "lang": "csharp",
+      "role": "syntax.method",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "type",
+      "modifiers": [],
+      "lang": "python",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [],
+      "lang": "python",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "variable",
+      "modifiers": [],
+      "lang": "python",
+      "role": "syntax.variable",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      }
+    },
+    {
+      "type": "parameter",
+      "modifiers": [],
+      "lang": "python",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "enumMember",
+      "modifiers": [],
+      "lang": "python",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "modifiers": [],
+      "lang": "python",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ],
+      "lang": "python",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "method",
+      "modifiers": [
+        "static",
+        "deprecated"
+      ],
+      "lang": "python",
+      "role": "syntax.method",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "type",
+      "modifiers": [],
+      "lang": "typescript",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [],
+      "lang": "typescript",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "variable",
+      "modifiers": [],
+      "lang": "typescript",
+      "role": "syntax.variable",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      }
+    },
+    {
+      "type": "parameter",
+      "modifiers": [],
+      "lang": "typescript",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "enumMember",
+      "modifiers": [],
+      "lang": "typescript",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "modifiers": [],
+      "lang": "typescript",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ],
+      "lang": "typescript",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "method",
+      "modifiers": [
+        "static",
+        "deprecated"
+      ],
+      "lang": "typescript",
+      "role": "syntax.method",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "type",
+      "modifiers": [],
+      "lang": "javascript",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [],
+      "lang": "javascript",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "variable",
+      "modifiers": [],
+      "lang": "javascript",
+      "role": "syntax.variable",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      }
+    },
+    {
+      "type": "parameter",
+      "modifiers": [],
+      "lang": "javascript",
+      "role": "syntax.parameter",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "enumMember",
+      "modifiers": [],
+      "lang": "javascript",
+      "role": "syntax.constant",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "modifiers": [],
+      "lang": "javascript",
+      "role": "syntax.string",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [
+        "documentation"
+      ],
+      "lang": "javascript",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "method",
+      "modifiers": [
+        "static",
+        "deprecated"
+      ],
+      "lang": "javascript",
+      "role": "syntax.method",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59",
+          "strikethrough": true,
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "boolean",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.boolean",
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#EC8F68"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "builtinType",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "selfTypeKeyword",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#EC8F68"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "attribute",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "builtinAttribute",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "derive",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "deriveHelper",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "lifetime",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.type",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "constParameter",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.constant",
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "const",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.constant",
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#EAE4DB"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8"
+        }
+      }
+    },
+    {
+      "type": "escapeSequence",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#F3B69C"
+        }
+      }
+    },
+    {
+      "type": "formatSpecifier",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#F3B69C"
+        }
+      }
+    },
+    {
+      "type": "invalidEscapeSequence",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.invalid",
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#E58177"
+        }
+      }
+    },
+    {
+      "type": "brace",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.punctuation",
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93"
+        }
+      }
+    },
+    {
+      "type": "macro",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#CBA32D"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "procMacro",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#CBA32D"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "arithmetic",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.operator",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#ABA399"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#ABA399"
+        }
+      }
+    },
+    {
+      "type": "selfKeyword",
+      "modifiers": [],
+      "lang": "rust",
+      "role": "syntax.keyword",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#EC8F68"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#EC8F68"
+        }
+      }
+    },
+    {
+      "type": "class",
+      "modifiers": [
+        "decorator",
+        "builtin"
+      ],
+      "lang": "python",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [
+        "decorator",
+        "library"
+      ],
+      "lang": "python",
+      "role": "syntax.decorator",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#CBA32D",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "class",
+      "modifiers": [
+        "builtin"
+      ],
+      "lang": "python",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "modifiers": [
+        "library"
+      ],
+      "lang": "python",
+      "role": "syntax.function",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      }
+    },
+    {
+      "type": "class",
+      "modifiers": [
+        "decorator"
+      ],
+      "lang": "typescript",
+      "role": "syntax.type",
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentAttributeName",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentAttributeQuotes",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentAttributeValue",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentCDataSection",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentComment",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentDelimiter",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentEntityReference",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentName",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentProcessingInstruction",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "xmlDocCommentText",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.commentDoc",
+      "italic": false,
+      "before": {
+        "pass": false,
+        "style": {}
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "constant",
+      "modifiers": [
+        "static"
+      ],
+      "lang": "csharp",
+      "role": "syntax.constant",
+      "italic": true,
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#EAE4DB",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#BE97B8",
+          "italic": true
+        }
+      }
+    },
+    {
+      "type": "delegate",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.type",
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#DFBC59"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#92A9C2"
+        }
+      }
+    },
+    {
+      "type": "stringEscapeCharacter",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.stringEscape",
+      "before": {
+        "pass": false,
+        "style": {
+          "foreground": "#7DB5A0"
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#F3B69C"
+        }
+      }
+    },
+    {
+      "type": "comment",
+      "modifiers": [],
+      "lang": "csharp",
+      "role": "syntax.comment",
+      "italic": true,
+      "before": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      },
+      "after": {
+        "pass": true,
+        "style": {
+          "foreground": "#A69E93",
+          "italic": true
+        }
+      }
+    }
+  ]
+}
