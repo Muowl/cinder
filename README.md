@@ -40,6 +40,10 @@ cover nine grammars (Rust, C, C++, C#, Python, TypeScript, JavaScript, TSX and J
 and theme-side semantic selector matching. They do not run language servers.
 See [the language review](qa/LANGUAGE-REVIEW.md) for findings, captures and limits.
 `CINDER_CHROMIUM_PATH` can select an existing compatible Chromium binary for captures.
+Install [DejaVu Sans Mono 2.37](https://dejavu-fonts.github.io/Download.html),
+including its oblique variant, before capturing. The capture script checks the
+rendered font and records the browser, platform and fonts in
+`qa/languages/screenshots/environment.json`.
 The baseline comparison needs Git history containing commit `2241d18`.
 
 ## Package for VS Code
@@ -53,3 +57,5 @@ code --install-extension vscode/cinder-warm-theme-0.3.2.vsix
 Choose **Cinder** under **Preferences: Color Theme**. Packaging does not publish
 an extension. After installed-theme QA, publish from `vscode/` using the intended
 Marketplace account. The prepublish hook rebuilds and validates tokens.
+VSIX packages are local build outputs ignored by Git. Attach distributable packages
+to GitHub Releases instead of committing them to the repository.

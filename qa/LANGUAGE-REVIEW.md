@@ -1,6 +1,7 @@
 # Cinder 0.3.2 — validação de linguagens
 
-Revisão de 31/10/2026 (America/Sao_Paulo). Base: Cinder 0.3.1,
+Revisão de 31/10/2026; capturas atualizadas em 04/11/2026 (America/Sao_Paulo).
+Base: Cinder 0.3.1,
 commit `2241d180fe5067b90710e34b2d1cc3f9c69bafec`.
 
 ## Parecer
@@ -12,8 +13,8 @@ mantiveram o comportamento esperado nas amostras, incluindo TSX/JSX, regex,
 templates, async/await, genéricos e campos privados.
 
 Esta etapa aprova as amostras tokenizadas e as regras semânticas testadas.
-Não certifica um resultado perfeito para toda construção ou extensão: não foi
-executado um VS Code Desktop com os servidores de linguagem nesta sessão.
+Não certifica um resultado perfeito para toda construção ou extensão: a validação
+integrada com os servidores de linguagem ainda não foi concluída.
 O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no Marketplace.
 
 ## Achados e correções
@@ -43,7 +44,9 @@ O pacote 0.3.2 foi gerado para essa verificação posterior, sem publicação no
   e 5,05:1 sobre a seleção da linha ativa. Os limites já descritos em
   [DESIGN.md](../DESIGN.md) continuam aplicáveis.
 - **27 capturas de espécimes**, nas nove gramáticas com 13, 15 e 18 px, renderizadas
-  em Chromium 153.0.8010.0 com DejaVu Sans Mono. A geração também verifica ausência
+  em Windows com Chromium 151.0.7922.34 e DejaVu Sans Mono 2.37. A geração confere
+  a fonte usada nos glifos de Rust e registra o [ambiente](languages/screenshots/environment.json).
+  Também verifica ausência
   de rolagem horizontal. Foram inspecionados os nove comparativos em 15 px e
   amostras densas de Rust/Python em 13 px e C++/C# em 18 px.
 - **Pacote VSIX 0.3.2** gerado com o hook de build/validação.
@@ -86,6 +89,12 @@ rust-analyzer, C/C++ ou clangd, C#, Python/Pylance e TypeScript do editor instal
 incluindo preferências pessoais, fonte e renderização do host. O modelo não
 substitui esse teste e não mede conforto durante sessões longas.
 
+Em 04/11/2026, o VSIX 0.3.2 foi instalado em um perfil separado do VS Code
+1.144.1 no Windows. A tentativa de revisão nativa ficou pendente: o workspace
+abriu em modo restrito, e o serviço de automação de janelas estava indisponível.
+Essa preparação não conta como aprovação visual nem como teste de servidores
+de linguagem. O PR e a Release 0.3.2 permanecem em rascunho até essa revisão.
+
 ## Reprodução
 
 ```sh
@@ -103,6 +112,13 @@ npm run package
 O comparativo usa o histórico Git com o commit base acima. `qa:languages` gera
 HTML e JSON determinísticos; `qa:capture` precisa de um navegador compatível.
 `CINDER_CHROMIUM_PATH` permite selecionar um Chromium já instalado.
+Instale [DejaVu Sans Mono 2.37](https://dejavu-fonts.github.io/Download.html),
+incluindo a variante oblíqua, antes de gerar as capturas. O script interrompe a
+execução se detectar substituição da fonte. As imagens atuais incluem a linha
+`/// Creates an empty queue` adicionada ao espécime Rust.
+
+Os VSIX são saídas locais ignoradas pelo Git; os comandos de empacotamento e
+instalação continuam válidos. A distribuição dos binários usa GitHub Releases.
 
 Referências primárias usadas para o modelo semântico:
 
